@@ -38,6 +38,14 @@ body {
   overflow: hidden;
 }
 
+.title {
+  @extend %dmsans-700;
+  font-size: 36px;
+  line-height: 1;
+  color: #000000;
+  text-align: center;
+}
+
 button {
   cursor: pointer;
 }
