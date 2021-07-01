@@ -7,4 +7,6 @@ $(function(){
     autoplay: true
   })
 
+  var mixer = mixitup('.week-products__list');
+
 });

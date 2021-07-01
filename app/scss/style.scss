@@ -16,9 +16,13 @@
     display: flex;
   }
 
+  &__list-top {
+    margin-left: 182px;
+  }
+
   &__list-item {
-    margin-right: 35px;
-    @extend %rubik-400;
+    margin-right: 34px;
+    @extend %rubik-500;
     font-size: 15px;
     line-height: 1.25;
 
@@ -107,7 +111,7 @@
   &__container {
     display: flex;
     justify-content: space-between;
-    padding: 220px 0 207px;
+    padding: 213px 0 295px;
   }
 
   &__inner {
@@ -122,14 +126,14 @@
     line-height: 1;
     max-width: 470px;
     color: $title;
-    padding-bottom: 40px;
+    padding-bottom: 21px;
   }
 
   &__text {
     @extend %rubik-400;
     font-size: 18px;
     line-height: 1.6;
-    padding-bottom: 40px;
+    margin-bottom: 60px;
     max-width: 370px;
     color: $default;
   }
@@ -157,6 +161,7 @@
 
   &__image {
     position: relative;
+    align-self: flex-end;
 
     &::after {
       content: "";
@@ -172,6 +177,10 @@
   .slick-dots {
     display: flex;
     justify-content: center;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    right: 0;
 
     li {
       margin: 0 6px 45px;
@@ -206,7 +215,7 @@
 
   &__item {
     position: relative;
-    padding: 40px 0;
+    padding: 35px 0;
   }
 
   &__support::before {
@@ -259,10 +268,10 @@
 }
 
 .week-products {
-  padding: 77px 0 86px;
+  padding: 66px 0 86px;
 
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   &__filter {
     margin-bottom: 80px;
@@ -274,7 +283,7 @@
   }
 
   &__filter-item {
-    margin-right: 30px;
+    margin-right: 17px;
   }
 
   &__filter-item:last-child {
@@ -290,6 +299,10 @@
     border: none;
   }
 
+  &__filter-btn.mixitup-control-active {
+    color: #191919;
+  }
+
   &__list {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -298,19 +311,25 @@
   }
 
   &__item {
+    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+    margin: 0 auto;
+  }
+
+  &__item-link {
+    width: 270px;
+    max-height: 380px;
+    height: 100%;
     padding: 34px 16px 30px;
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content: flex-end;
-    width: 270px;
-    height: 380px;
-    box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
   }
 
   &__img {
-    background-size: contain;
-    margin: auto 0;
+    max-height: 206px;
+    margin: auto auto;
+    object-fit: contain;
   }
 
   &__subtitle {
@@ -319,7 +338,6 @@
     font-size: 16px;
     line-height: 2.5;
     color: $title;
-    
   }
   &__price {
     @extend %dmsans-700;

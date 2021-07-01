@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GLEE | Furniture</title>
+  <link rel="icon" href="images/icons/glee-icon.png">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -20,38 +21,40 @@
         </a>
 
         <nav class="heder__menu menu">
-          <ul class="menu__list">
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                Home +
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                About
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                Services
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                Pages +
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                News
-              </a>
-            </li>
-            <li class="menu__list-item">
-              <a class="menu__list-link" href="#">
-                Contacts
-              </a>
-            </li>
-          </ul>
+          <div class="menu__list-top">
+            <ul class="menu__list">
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Home +
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  About
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Services
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Pages +
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  News
+                </a>
+              </li>
+              <li class="menu__list-item">
+                <a class="menu__list-link" href="#">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
 
         <div class="header__user-nav user-nav">
@@ -186,72 +189,90 @@
         <div class="week-products__filter">
           <ul class="week-products__filter-box">
             <li class="week-products__filter-item">
-              <button class="week-products__filter-btn">
+              <button class="week-products__filter-btn" type="button" data-filter="all">
                 All
               </button>
             </li>
             <li class="week-products__filter-item">
-              <button class="week-products__filter-btn">
+              <button class="week-products__filter-btn" type="button" data-filter=".category-a">
                 Furnitures
               </button>
             </li>
             <li class="week-products__filter-item">
-              <button class="week-products__filter-btn">
+              <button class="week-products__filter-btn" type="button" data-filter=".category-b">
                 Chairs
               </button>
             </li>
             <li class="week-products__filter-item">
-              <button class="week-products__filter-btn">
+              <button class="week-products__filter-btn" type="button" data-filter=".category-c">
                 Lighting
               </button>
             </li>
             <li class="week-products__filter-item">
-              <button class="week-products__filter-btn">
+              <button class="week-products__filter-btn" type="button" data-filter=".category-d">
                 Decor
               </button>
             </li>
           </ul>
         </div>
         <ul class="week-products__list">
-          <li class="week-products__item">
-            <img class="week-products__img" src="images/catalogue/product1.jpg" alt="Product image">
-            <h5 class="week-products__subtitle">Wooden radio</h5>
-            <p class="week-products__price"><span>$</span>29.00</p>
+
+          <li class="week-products__item mix category-a">
+            <a class="week-products__item-link" href="#">
+              <img class="week-products__img" src="images/catalogue/product1.jpg" alt="Product image">
+              <h5 class="week-products__subtitle">Wooden radio</h5>
+              <p class="week-products__price"><span>$</span>29.00</p>
+            </a>
           </li>
-          <li class="week-products__item">
-            <img class="week-products__img" src="images/catalogue/product2.jpg" alt="Product image">
-            <h5 class="week-products__subtitle">Wooden chair</h5>
-            <p class="week-products__price"><span>$</span>29.00</p>
+
+          <li class="week-products__item mix category-b">
+            <a class="week-products__item-link" href="#">
+              <img class="week-products__img" src="images/catalogue/product2.jpg" alt="Product image">
+              <h5 class="week-products__subtitle">Wooden chair</h5>
+              <p class="week-products__price"><span>$</span>29.00</p>
+            </a>
           </li>
-          <li class="week-products__item">
-            <img class="week-products__img" src="images/catalogue/product3.jpg" alt="Product image">
-            <h5 class="week-products__subtitle">White chair</h5>
-            <p class="week-products__price"><span>$</span>29.00</p>
+          <li class="week-products__item mix category-b">
+            <a class="week-products__item-link" href="#">
+              <img class="week-products__img" src="images/catalogue/product3.jpg" alt="Product image">
+              <h5 class="week-products__subtitle">White chair</h5>
+              <p class="week-products__price"><span>$</span>29.00</p>
+            </a>
           </li>
-          <li class="week-products__item">
-            <img class="week-products__img" src="images/catalogue/product4.jpg" alt="Product image">
-            <h5 class="week-products__subtitle">Retro table</h5>
-            <p class="week-products__price"><span>$</span>29.00</p>
+          <li class="week-products__item mix category-a">
+            <a class="week-products__item-link" href="#">
+              <img class="week-products__img" src="images/catalogue/product4.jpg" alt="Product image">
+              <h5 class="week-products__subtitle">Retro table</h5>
+              <p class="week-products__price"><span>$</span>29.00</p>
+            </a>
           </li>
-          <li class="week-products__item">
-            <img class="week-products__img" src="images/catalogue/product5.jpg" alt="Product image">
-            <h5 class="week-products__subtitle">Wooden radio</h5>
-            <p class="week-products__price"><span>$</span>29.00</p>
+          <li class="week-products__item mix category-a">
+            <a class="week-products__item-link" href="#">
+              <img class="week-products__img" src="images/catalogue/product5.jpg" alt="Product image">
+              <h5 class="week-products__subtitle">Wooden radio</h5>
+              <p class="week-products__price"><span>$</span>29.00</p>
+            </a>
           </li>
-          <li class="week-products__item">
-            <img class="week-products__img" src="images/catalogue/product6.jpg" alt="Product image">
-            <h5 class="week-products__subtitle">Wooden chair</h5>
-            <p class="week-products__price"><span>$</span>29.00</p>
+          <li class="week-products__item mix category-b">
+            <a class="week-products__item-link" href="#">
+              <img class="week-products__img" src="images/catalogue/product6.jpg" alt="Product image">
+              <h5 class="week-products__subtitle">Wooden chair</h5>
+              <p class="week-products__price"><span>$</span>29.00</p>
+            </a>
           </li>
-          <li class="week-products__item">
-            <img class="week-products__img" src="images/catalogue/product7.jpg" alt="Product image">
-            <h5 class="week-products__subtitle">White chair</h5>
-            <p class="week-products__price"><span>$</span>29.00</p>
+          <li class="week-products__item mix category-c">
+            <a class="week-products__item-link" href="#">
+              <img class="week-products__img" src="images/catalogue/product7.jpg" alt="Product image">
+              <h5 class="week-products__subtitle">White chair</h5>
+              <p class="week-products__price"><span>$</span>29.00</p>
+            </a>
           </li>
-          <li class="week-products__item">
-            <img class="week-products__img" src="images/catalogue/product8.jpg" alt="Product image">
-            <h5 class="week-products__subtitle">Retro table</h5>
-            <p class="week-products__price"><span>$</span>29.00</p>
+          <li class="week-products__item mix category-d">
+            <a class="week-products__item-link" href="#">
+              <img class="week-products__img" src="images/catalogue/product8.jpg" alt="Product image">
+              <h5 class="week-products__subtitle">Retro table</h5>
+              <p class="week-products__price"><span>$</span>29.00</p>
+            </a>
           </li>
         </ul>
       </div>
