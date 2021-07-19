@@ -21,3 +21,10 @@ $button:    #a3bbc8;
 %rubik-500 {
   font-family: 'Rubik-Medium', sans-serif;
 }
+
+@mixin clamp ($clamp) {
+  -webkit-line-clamp: $clamp;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
+}

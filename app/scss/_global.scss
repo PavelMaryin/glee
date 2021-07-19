@@ -7,22 +7,24 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @extend %dmsans-700;
+  font-size: 16px;
+  line-height: 1;
+  color: $default;
 }
 
 .main {
   flex-grow: 1;
 }
 
-.container-large {
-  max-width: 1770px;
+.container {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-}
 
-.container-small {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 15px;
+  &--large {
+    max-width: 1800px;
+  }
 }
 
 .sr-only {
@@ -46,11 +48,14 @@ body {
   text-align: center;
 }
 
-button {
-  cursor: pointer;
+.button {
+  color: #ffffff;
+  background-color: $accent;
 }
 
-// для 
+
+
+// для
 // button
 // a
 // input
