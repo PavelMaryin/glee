@@ -1,5 +1,5 @@
-@import "vars";
 @import "fonts";
+@import "vars";
 @import "reset";
 @import "libs";
 @import "global";
@@ -31,12 +31,13 @@
 
 .menu {
   display: flex;
-  
+
   &__item {
     margin-right: 34px;
-    @extend %rubik-500;
+    @extend %rubik;
+    font-weight: 500;
     font-size: 15px;
-    line-height: 1.25;
+    line-height: 1.2;
 
     &:last-child {
       margin-right: 0;
@@ -48,7 +49,6 @@
 }
 
 .navigation {
-
   &__box {
     margin-right: 20px;
     display: flex;
@@ -56,12 +56,20 @@
     border-radius: 25px;
   }
 
-  &__favorite {
+  &__favorite,
+  &__cart {
     width: 89px;
     height: 50px;
-    background-image: url("../images/icons/favorite.svg");
     background-repeat: no-repeat;
     background-position: 50%;
+  }
+  
+  &__favorite {
+    background-image: url("../images/icons/favorite.svg");
+  }
+  
+  &__cart {
+    background-image: url("../images/icons/cart.svg");
   }
 
   &__line {
@@ -72,18 +80,11 @@
     background-position: 50%;
   }
 
-  &__cart {
-    width: 89px;
-    height: 50px;
-    background-image: url("../images/icons/cart.svg");
-    background-repeat: no-repeat;
-    background-position: 50%;
-  }
-
   &__num {
     position: absolute;
     transform: translate(48px, 5px);
-    @extend %dmsans-400;
+    @extend %dmsans;
+    font-weight: 400;
     padding: 5px 6px;
     font-size: 10px;
     border-radius: 25px;
@@ -99,7 +100,7 @@
   border-radius: 25px;
   background-repeat: no-repeat;
   background-position: 50%;
-  
+
   &--search {
     background-color: rgba($accent, 0.2);
     background-image: url("../images/icons/search.svg");
@@ -135,7 +136,7 @@
   }
 
   &__name {
-    @extend %rubik-500;
+    @extend %rubik;
     text-transform: uppercase;
     font-size: 72px;
     line-height: 1;
@@ -146,7 +147,8 @@
   }
 
   &__link {
-    @extend %rubik-400;
+    @extend %rubik;
+    font-weight: 400;
     position: relative;
     font-style: 15px;
     line-height: 0.9;
@@ -205,7 +207,8 @@
         width: 30px;
         height: 29px;
         background-color: rgba(255, 255, 255, 0.3);
-        @extend %rubik-500;
+        @extend %rubik;
+        font-weight: 500;
         font-size: 11px;
         line-height: 1;
         color: $title;
@@ -229,7 +232,7 @@
   &__item {
     margin: 0 auto;
     position: relative;
-    padding: 35px 0 35px 225px;
+    padding: 35px 0 40px 225px;
     width: 100%;
 
     &:nth-child(2) {
@@ -261,17 +264,18 @@
   }
 
   &__subtitle {
-    @extend %dmsans-700;
+    @extend %dmsans;
     width: 220px;
     font-size: 18px;
-    line-height: 2.2;
+    line-height: 1.9;
     color: #414141;
     @include clamp(1);
   }
 
   &__text {
-    width: 220px;
-    @extend %dmsans-400;
+    width: 230px;
+    @extend %dmsans;
+    font-weight: 400;
     font-size: 16px;
     line-height: 1.9;
     color: #585858;
@@ -293,15 +297,14 @@
 
   &__list {
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 40px;
   }
 }
 
 .products-filter {
-
   &__item {
     margin-right: 17px;
   }
@@ -311,7 +314,7 @@
   }
 
   &__btn {
-    @extend %dmsans-700;
+    @extend %dmsans;
     font-size: 16px;
     line-height: 1;
     color: #8b8b8b;
@@ -329,6 +332,7 @@
   width: 270px;
   height: 380px;
   border-radius: 10px;
+  @extend %dmsans;
 
   &__link {
     height: 100%;
@@ -346,7 +350,6 @@
   }
 
   &__subtitle {
-    @extend %dmsans-400;
     font-size: 16px;
     line-height: 1.2;
     color: $title;
@@ -354,8 +357,6 @@
   }
 
   &__price {
-    @extend %dmsans-700;
-    font-size: 16px;
     line-height: 2.5;
     color: $accent;
   }
@@ -363,12 +364,16 @@
 
 .footer {
   padding-top: 80px;
+  @extend %rubik;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.6;
 
   &__links {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 60px;
-  border-bottom: 1px solid rgba($accent, 0.4);
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba($accent, 0.4);
   }
 
   &__contacts,
@@ -377,7 +382,6 @@
   &__subscribe {
     max-width: 270px;
     width: 100%;
-    @extend %rubik-400;
     color: $footer;
   }
 
@@ -387,13 +391,11 @@
   }
 
   .contacts {
-
     &__item {
       margin-bottom: 10px;
     }
 
     &__link {
-      font-size: 14px;
       line-height: 1.7;
       max-width: 200px;
     }
@@ -403,13 +405,11 @@
     }
   }
 
-
   .services,
   .account,
   .subscribe {
-
     &__subtitle {
-      @extend %dmsans-700;
+      @extend %dmsans;
       text-transform: uppercase;
       color: #1f2044;
       font-size: 16px;
@@ -420,17 +420,13 @@
     &__item,
     &__text {
       margin-bottom: 10px;
-      font-size: 14px;
-      line-height: 1.6;
     }
 
     &__text {
       margin-bottom: 40px;
     }
 
-
     &__link {
-      @extend %rubik-400;
       color: $footer;
     }
 
@@ -439,10 +435,11 @@
       height: 38px;
       background-color: rgba($background, 0.2);
       border: none;
-      padding: 0 15px;
-      
+      padding: 0 15px 3px;
+
       &::placeholder {
-        @extend %dmsans-400;
+        @extend %dmsans;
+        font-weight: 400;
         color: #234969;
         font-size: 12px;
       }
@@ -455,39 +452,32 @@
       background-color: $accent;
       color: #ffffff;
       border: none;
-      font-size: 14px;
     }
   }
 
   .subscribe {
-
     &__form {
       display: flex;
     }
   }
 
   .footer-bottom {
-    margin: 40px 0;
+    margin: 35px 0;
     display: flex;
     justify-content: space-between;
-    @extend %rubik-400;
-    font-size: 14px;
 
     &__nav {
       display: flex;
     }
 
     &__item {
-          padding: 0 14px;
-          border-right: 1px solid $accent;
-      
-          &:last-child {
-            padding-right: 0;
-            border-right: none;
-          }
-        }
+      padding: 0 14px;
+      border-right: 1px solid $accent;
 
+      &:last-child {
+        padding-right: 0;
+        border-right: none;
+      }
+    }
   }
-
-
-@import "media";
+}

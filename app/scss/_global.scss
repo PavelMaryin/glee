@@ -7,10 +7,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  @extend %dmsans-700;
+  @extend %dmsans;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1;
   color: $default;
+  background-color: #ffffff;
 }
 
 .main {
@@ -41,7 +43,8 @@ body {
 }
 
 .title {
-  @extend %dmsans-700;
+  @extend %dmsans;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1;
   color: #000000;
@@ -52,8 +55,6 @@ body {
   color: #ffffff;
   background-color: $accent;
 }
-
-
 
 // для
 // button
