@@ -1,6 +1,7 @@
 @font-face {
   font-family: 'DMSans';
   font-style: normal;
+  font-weight: 400;
   src:  url('../fonts/DMSans-Regular.woff2'),
         url('../fonts/DMSans-Regular.woff');
   font-display: swap;
@@ -9,6 +10,16 @@
 @font-face {
   font-family: 'DMSans';
   font-style: normal;
+  font-weight: 500;
+  src:  url('../fonts/DMSans-Medium.woff2'),
+        url('../fonts/DMSans-Medium.woff');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DMSans';
+  font-style: normal;
+  font-weight: 700;
   src:  url('../fonts/DMSans-Bold.woff2'),
         url('../fonts/DMSans-Bold.woff');
   font-display: swap;
@@ -17,6 +28,7 @@
 @font-face {
   font-family: 'Rubik';
   font-style: normal;
+  font-weight: 400;
   src:  url('../fonts/Rubik-Regular.woff2'),
         url('../fonts/Rubik-Regular.woff');
   font-display: swap;
@@ -25,6 +37,7 @@
 @font-face {
   font-family: 'Rubik';
   font-style: normal;
+  font-weight: 500;
   src:  url('../fonts/Rubik-Medium.woff2'),
         url('../fonts/Rubik-Medium.woff');
   font-display: swap;

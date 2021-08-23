@@ -1,10 +1,11 @@
-$accent:    #a3bbc8;
-$default:   #436372;
-$background:#fcd7b6;
-$title:     #243f4d;
-$subtitle:  #191919;
-$footer:    #7b7b7b;
-$button:    #a3bbc8;
+$bluef4:    #edf1f4;
+$bluec8:    #a3bbc8;
+$blue72:    #436372;
+$peachb6:   #fcd7b6;
+$blue4d:    #243f4d;
+$black19:   #191919;
+$gray7b:    #7b7b7b;
+$whitebluec8: #a3bbc8;
 
 %dmsans {
   font-family: 'DMSans', sans-serif;
@@ -14,7 +15,7 @@ $button:    #a3bbc8;
   font-family: 'Rubik', sans-serif;
 }
 
-@mixin clamp ($clamp) {
+@mixin clamp($clamp) {
   -webkit-line-clamp: $clamp;
   -webkit-box-orient: vertical;
   overflow: hidden;
