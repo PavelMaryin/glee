@@ -5,18 +5,20 @@ $(function () {
     arrows: false,
     // fade: true,
     // autoplay: true
-  })
+  });
 
-  var container1 = document.querySelector('.week-products');
-  var container2 = document.querySelector('.new-design'); 
+  
 
-  var config = {
+  let container1 = document.querySelector('.week-products');
+  let container2 = document.querySelector('.new-design'); 
+
+  let config = {
     controls: {
       scope: 'local'
     }
   };
 
-  var mixer = mixitup(container1, config);
-  var mixer1 = mixitup(container2, config);
+  let mixer = mixitup(container1, config);
+  let mixer1 = mixitup(container2, config);
 
 });
