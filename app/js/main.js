@@ -7,6 +7,13 @@ $(function () {
     // autoplay: true
   });
 
+  $('.partners__slider').slick({
+    arrows: false,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+  });
+
   
 
   let container1 = document.querySelector('.week-products');
