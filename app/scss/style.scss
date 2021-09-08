@@ -172,9 +172,10 @@
     font-family: "Rubik", sans-serif;
     font-weight: 500;
     position: relative;
-    font-style: 15px;
+    font-size: 15px;
     line-height: 0.9;
     padding: 20px 100px 20px 25px;
+    max-width: 100px;
     background-color: $bluef4;
     color: $blue4d;
     transition: color 0.3s, background-color 0.3s, fill 0.3s;
@@ -625,12 +626,11 @@
 
 .articles {
   position: relative;
-  margin-bottom: 78px;
 
   &__bg {
     position: absolute;
     top: 331px;
-    height: 436px;
+    height: 170px;
     width: 100%;
     background-color: rgba($peachb6, 0.2);
   }
@@ -659,7 +659,6 @@
   &__list {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 96px;
   }
 
   &__item {
@@ -753,14 +752,163 @@
 
 .partners {
   width: 100%;
+  padding: 90px 0 70px;
+  background-color: rgba($peachb6, 0.2);
+  margin-bottom: 65px;
 
   &__img {
     margin: 0 auto;
   }
 }
 
+.login {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+  &__header {
+    text-align: center;
+    padding: 25px 0 30px;
+    background-color: $bluef4;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.4;
+  }
+
+  &__box {
+    margin: 120px auto;
+    max-width: 470px;
+    width: 100%;
+  }
+
+  &__label {
+    display: block;
+    color: $blue72;
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    height: 60px;
+    border: 2px solid $grayf6;
+    margin: 12px 0 25px;
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+    border-bottom: 2px solid $grayf6;
+    margin-bottom: 30px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  &__btn {
+    width: 100%;
+    height: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s, border 0.3s;
+  }
+
+  &__remember {
+    position: relative;
+    @extend %text-effect;
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+  }
+
+  &__checkbox-style {
+    width: 14px;
+    height: 14px;
+    border-radius: 1px;
+    background-color: #ebebeb;
+    position: relative;
+    display: inline-block;
+  }
+
+  &__checkmark {
+    width: 14px;
+    height: 14px;
+    display: none;
+  }
+
+  &__checkbox:checked +  .login__checkbox-style .login__checkmark {
+    display: block;
+  }
+
+  &__btn-login {
+    color: #ffffff;
+    background: $whitebluec8;
+    border: none;
+    margin: 36px 0 32px;
+
+    &:hover {
+      color: #ffffff;
+      background: $blue4d;
+    }
+  }
+
+  &__btn-account {
+    color: $blue4d;
+    background: #ffffff;
+    border: 2px solid $whitebluec8;
+    
+    &:hover {
+      color: #ffffff;
+      background: $blue4d;
+      border: 2px solid $blue4d;
+    }
+  }
+
+}
+
+.breadcrumbs {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    color: rgba(#222933, 0.4);
+  }
+  &__item {
+    position: relative;
+    margin-right: 15px;
+
+    &::after {
+      content: "/";
+      position: absolute;
+      right: -10px;
+
+    }
+    
+    &:last-child {
+      margin-right: 0;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+}
+
+
+
+
 .footer {
-  padding-top: 80px;
   font-weight: 700;
   line-height: 1.6;
 
