@@ -1,5 +1,10 @@
 $(function () {
 
+  $(".js-range-slider").ionRangeSlider({
+    type: "double",
+    grid: false,
+  });
+
   $('.top-slider__inner').slick({
     dots: true,
     arrows: false,

@@ -36,3 +36,13 @@ $lightgraye0:#e0e0e0;
 @function min($numbers...) {
   @return m#{i}n(#{$numbers});
 }
+
+
+// скрытие чекбоксов для кастомизации
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}

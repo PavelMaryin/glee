@@ -696,7 +696,6 @@
     left: 28px;
     background-color: $whitebluec8;
     transition: background-color 0.3s;
-    @extend %text-effect;
 
     &:hover {
       background-color: $blue4d;
@@ -795,6 +794,11 @@
     height: 60px;
     border: 2px solid $grayf6;
     margin: 12px 0 25px;
+    padding: 0 15px 0 15px;
+
+    &::placeholder {
+      font-size: 30px;
+    }
   }
 
   &__block {
@@ -877,6 +881,9 @@
 }
 
 .breadcrumbs {
+
+  font-family: 'Rubik', sans-serif;
+  font-size: 14px;
 
   &__list {
     display: flex;
@@ -1028,4 +1035,145 @@
       border-right: none;
     }
   }
+}
+
+.shop {
+  
+  &__subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  &__header {
+    text-align: center;
+    padding: 25px 0 30px;
+    background-color: $bluef4;
+    margin-bottom: 100px;
+  }
+  
+  &__inner {
+    display: flex;
+  }
+
+  &__filter {
+    max-width: 270px;
+    width: 100%;
+    margin-right: 30px;
+  }
+}
+
+.filter {
+  padding: 30px 0;
+
+  &__subtitle {
+    font-family: 'DMSans', san-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  &__line {
+    width: 38px;
+    height: 2px;
+    fill: $whitebluec8;
+    margin-left: 17px;
+    margin-bottom: 5px;
+  }
+}
+
+.filter-category {
+  margin-bottom: 55px;
+
+  &__input {
+    @extend %checkbox-hidden;
+
+    &:checked + .filter-category__box {
+      background-color: rgba($whitebluec8, 0.2);
+      color: $blue4d;
+
+      .filter-category__checkbox--gray {
+        color: $blue4d;
+      }
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px 15px 15px;
+    border-radius: 5px;
+  }
+
+  &__arrow-right {
+    width: 5px;
+    height: 10px;
+    fill: $whitebluec8;
+  }
+
+  &__checkbox {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    display: block;
+
+    &--gray {
+      color: #b3b3b3;
+    }
+  }
+}
+
+// стиллизация фильтра
+
+.irs--flat .irs-min, .irs--flat .irs-max {
+  display: none;
+}
+
+.irs--flat .irs-line {
+  top: 0;
+  height: 2px;
+  background-color: rgba(#a3bbc8, 0.66);
+  border-radius: 0;
+}
+
+.irs--flat .irs-bar {
+  top: 0;
+  height: 3px;
+  background-color: rgba(#a3bbc8, 1);
+}
+
+.irs--flat .irs-handle>i:first-child {
+  position: absolute;
+  display: block;
+  top: -28px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: rgba(#a3bbc8, 1);
+  transition: background-color 0.3s;
+}
+
+.irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child {
+  background-color: $blue4d;
+}
+
+.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
+  color: rgba(#a3bbc8, 1);
+  font-size: 16px;
+  line-height: 1.333;
+  text-shadow: none;
+  padding: 1px 5px;
+  background-color: none;
+  border: none;
+  left: 0;
+}
+
+
+.irs-from, .irs-to, .irs-single {
+  position: absolute;
+  display: block;
+  left: 9px;
+  cursor: default;
+  white-space: nowrap;
 }
