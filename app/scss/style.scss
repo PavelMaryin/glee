@@ -1147,7 +1147,7 @@
   position: absolute;
   display: block;
   top: -28px;
-  left: 50%;
+  left: 1px;
   width: 15px;
   height: 15px;
   background-color: rgba(#a3bbc8, 1);
@@ -1158,22 +1158,58 @@
   background-color: $blue4d;
 }
 
-.irs--flat .irs-from, .irs--flat .irs-to, .irs--flat .irs-single {
-  color: rgba(#a3bbc8, 1);
-  font-size: 16px;
-  line-height: 1.333;
-  text-shadow: none;
-  padding: 1px 5px;
-  background-color: none;
-  border: none;
-  left: 0;
+.irs--flat .irs-from, .irs-to, .irs-single {
+  display: none;
 }
 
+.filter-price {
+  margin-bottom: 90px;
 
-.irs-from, .irs-to, .irs-single {
-  position: absolute;
-  display: block;
-  left: 9px;
-  cursor: default;
-  white-space: nowrap;
+  &__summ {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.shop__contant {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    margin-bottom: 107px;
+  }
+}
+
+.pagination {
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 120px;
+
+  &__list {
+    display: inline-block;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  &__num,
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding: 18px 20px;
+    border: 1px solid $whitebluec8;
+    @extend %text-effect;
+
+
+    &--active {
+      color: #ffffff;
+      background-color: $whitebluec8;
+    }
+  }
+
+
 }

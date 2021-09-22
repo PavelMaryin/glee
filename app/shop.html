@@ -196,18 +196,22 @@
 
             <div class="filter-price">
               <h3 class="filter-price__subtitle filter__subtitle">
-                Category
+                Price
                 <svg class="filter__line">
                   <use xlink:href="images/sprite.svg#filter-line"></use>
                 </svg>
               </h3>
               <form class="filter-price__form" action="#">
-                <input class="js-range-slider" type="text" name="my_range" value="" 
-                data-max="1000"
-                data-from="100"
-                data-to="500"
-                />
-                
+                <input class="js-range-slider" type="text" name="my_range" value="" data-min="0" data-max="1000"
+                  data-from="100" data-to="500" />
+                <div class="filter-price__summ">
+                  <div class="filter-price__block">
+                    $<span class="filter-price__from"></span>.00
+                  </div>
+                  <div class="filter-price__block">
+                    $<span class="filter-price__to"></span>.00
+                  </div>
+                </div>
               </form>
 
             </div>
@@ -274,14 +278,531 @@
           </div>
           <div class="shop__contant">
 
+            <ul class="shop__contant__list">
 
+              <li class="shop__contant__item mix category-a">
+                <article class="product-card">
+    
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product1.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">Wooden radio</h3>
+                  <span class="product-card__price"><span class="product-card__currency">$</span>29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+    
+                </article>
+              </li>
+    
+              <li class="shop__contant__item mix category-a">
+                <article class="product-card">
+    
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product2.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">Wooden chair</h3>
+                  <span class="product-card__price">
+                    <span class="product-card__currency">$</span>
+                    29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+    
+                </article>
+              </li>
+    
+              <li class="shop__contant__item mix category-a">
+                <article class="product-card">
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product3.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">Retro table</h3>
+                  <span class="product-card__price">
+                    <span class="product-card__currency">$</span>
+                    29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+                </article>
+              </li>
+    
+              <li class="shop__contant__item mix category-b">
+                <article class="product-card">
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product4.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">Wooden radio</h3>
+                  <span class="product-card__price">
+                    <span class="product-card__currency">$</span>
+                    29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+                </article>
+              </li>
+    
+              <li class="shop__contant__item mix category-c">
+                <article class="product-card">
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product5.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">Wooden chair</h3>
+                  <span class="product-card__price">
+                    <span class="product-card__currency">$</span>29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+                </article>
+              </li>
+    
+              <li class="shop__contant__item mix category-d">
+                <article class="product-card">
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product6.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">Wooden radio</h3>
+                  <span class="product-card__price"><span class="product-card__currency">$</span>29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+                </article>
+              </li>
+    
+              <li class="shop__contant__item mix category-a">
+                <article class="product-card">
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product7.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">White chair</h3>
+                  <span class="product-card__price">
+                    <span class="product-card__currency">$</span>
+                    29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+                </article>
+              </li>
+    
+              <li class="shop__contant__item mix category-c">
+                <article class="product-card">
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product8.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">Retro table</h3>
+                  <span class="product-card__price">
+                    <span class="product-card__currency">$</span>
+                    29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+                </article>
+              </li>
+  
+              <li class="shop__contant__item mix category-c">
+                <article class="product-card">
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product5.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">Wooden chair</h3>
+                  <span class="product-card__price">
+                    <span class="product-card__currency">$</span>29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+                </article>
+              </li>
+    
+              <li class="shop__contant__item mix category-d">
+                <article class="product-card">
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product6.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">Wooden radio</h3>
+                  <span class="product-card__price"><span class="product-card__currency">$</span>29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+                </article>
+              </li>
+    
+              <li class="shop__contant__item mix category-a">
+                <article class="product-card">
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product7.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">White chair</h3>
+                  <span class="product-card__price">
+                    <span class="product-card__currency">$</span>
+                    29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+                </article>
+              </li>
+    
+              <li class="shop__contant__item mix category-c">
+                <article class="product-card">
+                  <div class="product-card__box">
+                    <img class="product-card__img" src="images/catalogue/product8.jpg" alt="Product image">
+                    <div class="product-card__links">
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                      <a class="product-card__btn button-round" href="#">
+                        <svg class="button-round__icon">
+                          <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                        </svg>
+                        <span class="sr-only">Search link</span>
+                      </a>
+    
+                    </div>
+                  </div>
+                  <h3 class="product-card__subtitle">Retro table</h3>
+                  <span class="product-card__price">
+                    <span class="product-card__currency">$</span>
+                    29.00
+                    <span class="sr-only">Price of product</span>
+                  </span>
+                </article>
+              </li>
+
+            </ul>
 
 
           </div>
         </div>
+
+        <div class="pagination">
+          <ul class="pagination__list">
+            <li class="pagination__item">
+              <a class="pagination__num pagination__num--active" href="#">
+                1
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__num" href="#">
+                2
+              </a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__num" href="#">
+                3
+              </a>
+            </li>
+          </ul>
+          <a class="pagination__link" href="#">
+            Next
+          </a>
+
+        </div>
+
+
       </div>
 
   </main>
+
+  <div class="partners">
+    <div class="container">
+      <ul class="partners__slider">
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/Partners/peterson.png" alt="Peterrson Company Logo">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/Partners/kmn-consulting.png" alt="CMN Consulting Company Logo">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/Partners/chainforce.png" alt="Chainforce Company Logo">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/Partners/nextg3n.png" alt="Nest3N Company Logo">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/Partners/vintage.png" alt="Vintage Company Logo">
+          </a>
+        </li>
+        <li class="partners__item">
+          <a class="partners__link" href="#">
+            <img class="partners__img" src="images/Partners/chainforce.png" alt="Chainforce Company Logo">
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
 
   <footer class="footer">
     <div class="container">
