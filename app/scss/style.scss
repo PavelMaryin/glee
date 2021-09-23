@@ -1200,7 +1200,7 @@
   &__link {
     position: relative;
     display: inline-block;
-    padding: 18px 20px;
+    padding: 15px 20px;
     border: 1px solid $whitebluec8;
     @extend %text-effect;
 
@@ -1210,6 +1210,36 @@
       background-color: $whitebluec8;
     }
   }
+}
 
+.filter-recent {
 
+  &__item {
+    margin-bottom: 24px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__img {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #f2f2f2;
+    object-fit: contain;
+    margin-right: 18px;
+  }
+
+  &__subtitle {
+    margin-bottom: 10px;
+  }
+
+  &__stars {
+    margin-bottom: 7px;
+  }
 }

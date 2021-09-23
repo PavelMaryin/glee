@@ -1,5 +1,12 @@
 $(function () {
 
+
+  $(".filter-recent__stars").rateYo({
+    starWidth: "11px",
+    readOnly: true,
+  });
+
+
   $(".js-range-slider").ionRangeSlider({
     type: "double",
     grid: false,
