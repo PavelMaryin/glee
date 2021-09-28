@@ -1,8 +1,22 @@
 $(function () {
 
+  $('.shop__contant-btn').on('click' , function () {
+    $('.shop__contant-btn').removeClass('shop__contant-btn--active');
+    $(this).addClass('shop__contant-btn--active');
+  });
 
+  $('.shop__contant-btn--list').on('click' , function () {
+    $('.product-card').addClass('product-card--list');
+  });
+
+  $('.shop__contant-btn--grid').on('click' , function () {
+    $('.product-card').removeClass('product-card--list');
+  });
+
+  
   $(".filter-recent__stars").rateYo({
     starWidth: "11px",
+    ratedFill: "#ffcc00",
     readOnly: true,
   });
 
