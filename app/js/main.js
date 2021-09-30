@@ -6,11 +6,12 @@ $(function () {
   });
 
   $('.shop__contant-btn--list').on('click' , function () {
-    $('.product-card').addClass('product-card--list');
+    $('.shop__contant-list').addClass('shop__contant-list--rows');
+
   });
 
   $('.shop__contant-btn--grid').on('click' , function () {
-    $('.product-card').removeClass('product-card--list');
+    $('.shop__contant-list').removeClass('shop__contant-list--rows');
   });
 
   
@@ -19,6 +20,12 @@ $(function () {
     ratedFill: "#ffcc00",
     readOnly: true,
   });
+
+  $('.product-card__stars').rateYo({
+    starWidth: "18px",
+    ratedFill: "#ffcc00",
+    readOnly: true,
+  })
 
 
   $(".js-range-slider").ionRangeSlider({

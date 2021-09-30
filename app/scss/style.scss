@@ -183,7 +183,7 @@
     &:hover {
       background-color: $bluec8;
       color: #ffffff;
-      
+
       .top-slider__arrows {
         fill: #ffffff;
       }
@@ -353,77 +353,6 @@
 
   &__btn.mixitup-control-active {
     color: #191919;
-  }
-}
-
-.product-card {
-  position: relative;
-  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
-  width: 270px;
-  height: 380px;
-  border-radius: 10px;
-
-  &--list {
-    max-width: 100%;
-  }
-
-  &__box {
-    position: relative;
-    height: 245px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  &__img {
-    margin: auto auto;
-    object-fit: contain;
-  }
-
-  &__btn {
-    margin-right: 16px;
-  }
-
-  &__links {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 180px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    transform: translateY(300%);
-    transition: transform 0.3s;
-
-    :last-child {
-      margin-right: 0;
-    }
-  }
-
-  &__subtitle {
-    position: relative;
-    font-weight: 500;
-    font-size: 16px;
-    color: $blue4d;
-    text-align: center;
-    padding: 0 5px;
-    @include clamp(1);
-  }
-
-  &__price {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    line-height: 2.5;
-    color: $bluec8;
-  }
-
-  &:hover {
-    .product-card__links {
-      transform: translateY(0);
-    }
   }
 }
 
@@ -713,7 +642,7 @@
     color: $gray26;
     @include clamp(3);
   }
-  
+
   &__bottom {
     position: absolute;
     padding: 15px 0 23px;
@@ -721,7 +650,6 @@
     bottom: 0;
     border-top: 1px solid $lightgraye0;
   }
-
 
   &__autor-icon,
   &__data-icon {
@@ -765,7 +693,7 @@
 }
 
 .login {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 14px;
 
@@ -854,7 +782,7 @@
     display: none;
   }
 
-  &__checkbox:checked +  .login__checkbox-style .login__checkmark {
+  &__checkbox:checked + .login__checkbox-style .login__checkmark {
     display: block;
   }
 
@@ -874,19 +802,17 @@
     color: $blue4d;
     background: #ffffff;
     border: 2px solid $whitebluec8;
-    
+
     &:hover {
       color: #ffffff;
       background: $blue4d;
       border: 2px solid $blue4d;
     }
   }
-
 }
 
 .breadcrumbs {
-
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 14px;
 
@@ -903,9 +829,8 @@
       content: "/";
       position: absolute;
       right: -10px;
-
     }
-    
+
     &:last-child {
       margin-right: 0;
 
@@ -914,11 +839,7 @@
       }
     }
   }
-
 }
-
-
-
 
 .footer {
   font-weight: 700;
@@ -1043,21 +964,20 @@
 }
 
 .shop {
-  
   &__subtitle {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 300;
     font-size: 36px;
     margin-bottom: 12px;
   }
-  
+
   &__header {
     text-align: center;
     padding: 22px 0 30px;
     background-color: $bluef4;
     margin-bottom: 114px;
   }
-  
+
   &__inner {
     display: flex;
   }
@@ -1119,7 +1039,7 @@
   }
 
   &__checkbox {
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     display: block;
 
     &--gray {
@@ -1130,7 +1050,8 @@
 
 // стиллизация фильтра
 
-.irs--flat .irs-min, .irs--flat .irs-max {
+.irs--flat .irs-min,
+.irs--flat .irs-max {
   display: none;
 }
 
@@ -1147,7 +1068,7 @@
   background-color: rgba(#a3bbc8, 1);
 }
 
-.irs--flat .irs-handle>i:first-child {
+.irs--flat .irs-handle > i:first-child {
   position: absolute;
   display: block;
   top: -28px;
@@ -1158,11 +1079,14 @@
   transition: background-color 0.3s;
 }
 
-.irs--flat .irs-handle.state_hover>i:first-child, .irs--flat .irs-handle:hover>i:first-child {
+.irs--flat .irs-handle.state_hover > i:first-child,
+.irs--flat .irs-handle:hover > i:first-child {
   background-color: $blue4d;
 }
 
-.irs--flat .irs-from, .irs-to, .irs-single {
+.irs--flat .irs-from,
+.irs-to,
+.irs-single {
   display: none;
 }
 
@@ -1181,14 +1105,167 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-family: 'Rubik', sans-serif;
+    font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 14px;
     padding-right: 7px;
   }
 }
 
+.pagination {
+  text-align: center;
+  font-family: "Rubik", sans-serif;
+  margin-bottom: 120px;
+
+  &__list {
+    display: inline-block;
+  }
+
+  &__item {
+    display: inline-block;
+    margin-right: 15px;
+  }
+
+  &__num,
+  &__link {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    border: 1px solid $whitebluec8;
+    @extend %text-effect;
+
+    &--active {
+      color: #ffffff;
+      background-color: $whitebluec8;
+    }
+  }
+}
+
+.filter-recent {
+  margin-top: -5px;
+
+  &__list {
+    margin-top: 30px;
+  }
+
+  &__item {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__img {
+    width: 70px;
+    height: 70px;
+    border: 2px solid #f2f2f2;
+    object-fit: contain;
+    margin-right: 20px;
+  }
+
+  &__card-subtitle {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    margin: 4px 0 10px;
+  }
+
+  &__stars {
+    margin-bottom: 7px;
+  }
+}
+
+.jq-ry-container {
+  padding: 0;
+}
+
+.product-card {
+  position: relative;
+  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  width: 270px;
+  height: 380px;
+  border-radius: 10px;
+
+  &__box {
+    position: relative;
+    height: 245px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    // margin: auto 0;
+    padding: 10px;
+    object-fit: contain;
+    text-align: center;
+  }
+
+  &__btn {
+    margin-right: 16px;
+  }
+
+  &__links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 180px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform: translateY(300%);
+    transition: transform 0.3s;
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    color: $blue4d;
+    text-align: center;
+    padding: 0 5px;
+    @include clamp(1);
+  }
+
+  &__price {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    line-height: 2.5;
+    color: $bluec8;
+  }
+
+  &__text,
+  &__btn-cart,
+  &__stars,
+  &__btn-cart,
+  &__btn-favorite {
+    display: none;
+  }
+
+  &:hover {
+    .product-card__links {
+      transform: translateY(0);
+    }
+  }
+}
+
 .shop {
+  &__contant {
+    width: 100%;
+  }
 
   &__contant-filter {
     display: flex;
@@ -1233,80 +1310,123 @@
     grid-column-gap: 30px;
     grid-row-gap: 40px;
     margin-bottom: 107px;
-  }
-}
 
-.pagination {
-  text-align: center;
-  font-family: 'Rubik', sans-serif;
-  margin-bottom: 120px;
+    &.shop__contant-list--rows {
+      grid-template-columns: repeat(1, 1fr);
 
-  &__list {
-    display: inline-block;
-  }
+      .shop__contant-item:nth-child(n + 5) {
+        display: none;
+      }
 
-  &__item {
-    display: inline-block;
-    margin-right: 15px;
-  }
+      .product-card {
+        display: flex;
+        min-width: 100%;
+        height: 500px;
+        border-radius: 0;
+        font-family: "Rubik", sans-serif;
+        color: #333333;
 
-  &__num,
-  &__link {
-    position: relative;
-    display: inline-block;
-    padding: 15px 20px;
-    border: 1px solid $whitebluec8;
-    @extend %text-effect;
+        &__box {
+          width: 370px;
+          height: 100%;
+          border: 2px solid #e5e5e5;
+          margin-bottom: 0;
+          flex-shrink: 0;
+        }
+
+        &__img {
+          margin: 20px;
+        }
+
+        &__links {
+          display: none;
+        }
+
+        &__description {
+          padding: 80px 35px 0 45px;
+        }
+
+        &__subtitle {
+          font-weight: 400;
+          font-size: 40px;
+          color: inherit;
+          text-align: left;
+          margin-bottom: 25px;
+        }
+
+        &__price {
+          justify-content: flex-end;
+          flex-direction: row-reverse;
+          color: inherit;
+          font-size: 30px;
+        }
+
+        &__text {
+          display: block;
+          margin-bottom: 37px;
+        }
+
+        .button-square {
+          display: inline-block;
+          width: 50px;
+          height: 50px;
+          padding: 0;
+          border: none;
+          margin-right: 6px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
 
 
-    &--active {
-      color: #ffffff;
-      background-color: $whitebluec8;
+        
+        &__btn-cart {
+          background-color: $bluec8;
+          box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+          :hover {
+            background-color: $blue4d;
+            fill: #ffffff;
+          }
+        }
+
+        &__btn-cart svg{
+          fill: #ffffff;
+          
+        }
+        
+        &__btn-favorite {  
+          background-color: #ffffff;
+          box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+
+          :hover {
+            background-color: $bluec8;
+            fill: #ffffff;
+          }
+        }
+
+        // &__btn-cart {
+        //   position: relative;
+        //   display: block;
+        //   text-transform: uppercase;
+        //   background-color: $bluec8;
+        //   color: #ffffff;
+        //   border-radius: 5px;
+        //   border: none;
+        //   padding: 20px 50px;
+        //   transition: background-color 0.3s;
+
+        //   &:hover {
+        //     background-color: $blue4d;
+        //   }
+        // }
+
+        &__stars {
+          display: block;
+          margin-bottom: 40px;
+        }
+      }
     }
   }
 }
-
-.filter-recent {
-  margin-top: -5px;
-  
-  &__list {
-    margin-top: 30px;
-  }
-
-  &__item {
-    margin-bottom: 24px;
-    
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
-
-  &__inner {
-    display: flex;
-    justify-content: flex-start;
-  }
-
-  &__img {
-    width: 70px;
-    height: 70px;
-    border: 2px solid #f2f2f2;
-    object-fit: contain;
-    margin-right: 20px;
-  }
-
-  &__card-subtitle {
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    margin: 4px 0 10px;
-  }
-
-  &__stars {
-    margin-bottom: 7px;
-  }
-}
-
-.jq-ry-container {
-  padding: 0;
-}
-
