@@ -1270,7 +1270,7 @@
   &__contant-filter {
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin: 0 20px 20px;
   }
 
   &__contant-subtitle {
@@ -1309,7 +1309,7 @@
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 30px;
     grid-row-gap: 40px;
-    margin-bottom: 107px;
+    margin-bottom: 77px;
 
     &.shop__contant-list--rows {
       grid-template-columns: repeat(1, 1fr);
@@ -1343,7 +1343,7 @@
         }
 
         &__description {
-          padding: 80px 35px 0 45px;
+          padding: 83px 30px 0 52px;
         }
 
         &__subtitle {
@@ -1351,7 +1351,7 @@
           font-size: 40px;
           color: inherit;
           text-align: left;
-          margin-bottom: 25px;
+          margin-bottom: 15px;
         }
 
         &__price {
@@ -1363,7 +1363,9 @@
 
         &__text {
           display: block;
-          margin-bottom: 37px;
+          margin: 4px 0 30px 10px;
+          @include clamp(3);
+          line-height: 1.8;
         }
 
         .button-square {
@@ -1379,8 +1381,6 @@
           }
         }
 
-
-        
         &__btn-cart {
           background-color: $bluec8;
           box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
@@ -1393,7 +1393,6 @@
 
         &__btn-cart svg{
           fill: #ffffff;
-          
         }
         
         &__btn-favorite {  
@@ -1401,30 +1400,15 @@
           box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 
           :hover {
-            background-color: $bluec8;
+            
+            background-color: $blue4d;
             fill: #ffffff;
           }
         }
 
-        // &__btn-cart {
-        //   position: relative;
-        //   display: block;
-        //   text-transform: uppercase;
-        //   background-color: $bluec8;
-        //   color: #ffffff;
-        //   border-radius: 5px;
-        //   border: none;
-        //   padding: 20px 50px;
-        //   transition: background-color 0.3s;
-
-        //   &:hover {
-        //     background-color: $blue4d;
-        //   }
-        // }
-
         &__stars {
           display: block;
-          margin-bottom: 40px;
+          margin: 0 0 15px 5px;
         }
       }
     }
