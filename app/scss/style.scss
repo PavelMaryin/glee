@@ -1414,3 +1414,91 @@
     }
   }
 }
+
+.product-page {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+
+  &__inner {
+    margin: 120px 0 100px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__slider {
+    display: flex;
+    max-width: 550px;
+    width: 100%;
+  }
+
+  &__thumb-item {
+    width: 138px;
+    height: 160px;
+    border: 2px solid #f2f2f2;
+    margin: 0 25px 25px 0;
+    
+    :last-child {
+      margin-bottom: 0;
+    }
+    
+    &__thumb-img {
+      object-fit: contain;
+    }
+  }
+
+  &__thumb-big {
+    height: 530px;
+    max-width: 387px;
+    width: 100%;
+    border: 2px solid #f2f2f2;
+    
+  }
+
+  &__description {
+    max-width: 570px;
+    width: 100%;
+    padding: 30px 20px 0;
+    color: $blue4d;
+  }
+
+  &__subtitle {
+    margin-bottom: 25px;
+    font-size: 40px;
+    font-weight: inherit;
+  }
+
+  &__stars {
+    margin-bottom: 40px;
+  }
+
+  &__price {
+    margin-bottom: 25px;
+    font-size: 30px;
+    color: $gray26;
+  }
+
+  &__currancy {
+    margin-left: -5px;
+  }
+
+  &__text {
+    margin-bottom: 35px;
+    line-height: 2;
+    @include clamp(4);
+    color: $blue4d;
+    }
+  
+
+  &__form {
+    margin-bottom: 56px;
+    display: flex;
+  }
+
+  &__info-title {
+    margin-bottom: 17px;
+  }
+
+  &__info {
+
+  }
+}
