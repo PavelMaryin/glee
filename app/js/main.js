@@ -14,6 +14,8 @@ $(function () {
     $('.shop__contant-list').removeClass('shop__contant-list--rows');
   });
 
+  $('.product-page__input').styler();
+
   
   $(".filter-recent__stars").rateYo({
     starWidth: "11px",
