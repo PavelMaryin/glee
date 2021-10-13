@@ -54,6 +54,23 @@ body {
   background-color: $bluec8;
 }
 
+%button {
+  padding: 18px 53px 15px;
+  border-radius: 5px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: $whitebluec8;
+  border: none;
+  letter-spacing: 1px;
+  transition: background-color 0.3s;
+    
+    &:hover {
+      background-color: $blue4d;
+    }
+}
+
 %text-effect {
   outline: transparent;
   border-bottom: 1px solid transparent;
