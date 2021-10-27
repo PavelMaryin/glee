@@ -61,3 +61,11 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'Nunito';
+  font-style: normal;
+  font-weight: 700;
+  src:  url('../fonts/Nunito-Bold.woff2'),
+        url('../fonts/Nunito-Bold.woff');
+  font-display: swap;
+}
