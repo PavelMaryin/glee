@@ -1646,26 +1646,25 @@
     margin-bottom: 20px;
   }
 
-  &__input-name {
-    max-width: 570px;
+  &__input-name,
+  &__input-mail,
+  &__input-text {
+    padding: 10px;
     width: 100%;
+  }
+  
+  &__input-name {
     margin-right: 20px;
-    height: 50px;
-    padding: 20px;
   }
 
+  &__input-name,
   &__input-mail {
     max-width: 570px;
-    width: 100%;
     height: 50px;
-    padding: 20px;
   }
 
   &__input-text {
-    display: inline-block;
-    width: 100%;
     margin-bottom: 20px;
-    // padding: 20px;
     height: 224px;
     resize: none;
   }
@@ -2007,7 +2006,7 @@
     font-size: 12px;
     color: #9a9a9a;
     transition: color 0.3s;
-    
+
     &:hover {
       color: $blue4d;
     }
@@ -2018,5 +2017,252 @@
     height: 14px;
     margin-right: 5px;
     margin-bottom: -2px;
+  }
+}
+
+.blog-page {
+  &__item {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: $blue4d;
+    padding-bottom: 0;
+
+    h3 {
+      font-size: 36px;
+      color: #333333;
+      padding-bottom: 30px;
+    }
+
+    span {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 2;
+      padding-bottom: 30px;
+    }
+
+    p {
+      padding-bottom: 40px;
+      font-size: 18px;
+      line-height: 2;
+      padding-bottom: 60px;
+    }
+
+    blockquote {
+      background-color: $bluef4;
+      border-left: 6px solid $bluec8;
+      padding: 25px 35px;
+      margin-bottom: 45px;
+      line-height: 1.9;
+
+      span {
+        display: block;
+        position: relative;
+        padding: 25px 0 0 40px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 14px;
+          width: 20px;
+          height: 3px;
+          background-color: $bluec8;
+        }
+      }
+    }
+
+    h4 {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 2;
+      padding-bottom: 30px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+    &--left {
+      
+      .blog-page__img {
+        margin-right: 30px;
+      }
+    }
+
+    &--right {
+      flex-direction: row-reverse;
+      
+      .blog-page__img {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  &__box-description {
+    p {
+      padding-bottom: 0;
+    }
+  }
+
+
+  &__share-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+    border-top: 2px solid #ebebeb;
+    border-bottom: 2px solid #ebebeb;
+    margin-bottom: 70px;
+  }
+
+  &__autor-img {
+    width: 76px;
+    height: 76px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-right: 30px;
+  }
+
+  &__autor {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+
+    span {
+      display: block;
+      font-weight: 400;
+    }
+  }
+
+  &__links-list {
+    align-self: center;
+  }
+
+  &__tags-link {
+    margin-left: 10px;
+    color: #a1a1a1;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $blue4d;
+    }
+  }
+
+  &__links {
+    margin-bottom: 20px;
+  }
+
+  &__social-link {
+    margin-left: 20px;
+  }
+
+  &__social-svg {
+    width: 16px;
+    height: 16px;
+    fill: #a1a1a1;
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: $blue4d;
+    }
+  }
+
+  &__comments-item {
+    display: flex;
+    padding: 30px 0;
+    border-bottom: 1px solid #ebebeb;
+    
+    &:last-of-type {
+      border-bottom: none;
+    }
+
+    &--reply {
+      margin-left: 130px;
+    }
+  }
+
+  &__subtitle {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #436372;
+    margin-bottom: 30px;
+  }
+
+  &__comments-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+
+  &__comments-date {
+    font-size: 14px;
+    color: #9e9e9e;
+  }
+
+  &__comments-img {
+    max-width: 100px;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-right: 30px;
+  }
+
+  &__comments-name {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #436372;
+  }
+
+  &__comments-text {
+    color: #565872;
+    line-height: 1.9;
+    margin-bottom: 20px;
+  }
+
+  &__comments-btn {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    color: #516278;
+    font-size: 14px;
+    transition: color 0.3s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/sprite.svg#arrow-blog-reply');
+      background-repeat: no-repeat;
+      width: 13px;
+      height: 15px;
+      right: -20px;
+      top: 2px;
+      fill: #516278;
+    }
+
+    &:hover {
+      color: $blue4d;
+    }
+  }
+
+  &__review {
+    padding: 70px 0 120px;
+
+    .product-page__review-title {
+      font-family: 'Rubik', sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+      color: #436372;
+      padding-bottom: 30px;
+    }
+
+    .product-page__review-btn {
+      border-radius: 0;
+      text-transform: uppercase;
+    }
+
   }
 }
