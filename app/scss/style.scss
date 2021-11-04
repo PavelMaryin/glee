@@ -2263,6 +2263,147 @@
       border-radius: 0;
       text-transform: uppercase;
     }
-
   }
+}
+
+.contact {
+  padding: 120px 0;
+
+  &__subtitle {
+    font-family: 'DMSans', sans-serif;
+    font-weight: 700;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 70px;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    position: relative;
+    width: 370px;
+    height: 380px;
+    background-color: #fbfbfb;
+    border: 2px solid #fbfbfb;
+    transition: border 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding-top: 70px;
+    margin-bottom: 120px;
+    box-shadow: none;
+
+    &:hover {
+      border: 2px solid $bluec8;
+      box-shadow: 0px 5px 20px 0px rgba(146, 146, 146, 0.3);
+
+      .contact__item-icon {
+        background-color: $bluec8;
+      }
+      
+      .contact__item-svg {
+        fill: #ffffff;
+      }
+    }
+  }
+
+  &__item-icon {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    margin: 0 auto 70px;
+    transition: background-color 0.3s;
+  }
+
+  &__item-svg {
+    position: absolute;
+    width: 31px;
+    height: 44px;
+    fill: $bluec8;
+    left: 32%;
+    top: 21%;
+    transition: fill 0.3s;
+  }
+
+  &__item-subtitle {
+    display: block;
+    font-family: 'DMSans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #222222;
+    margin-bottom: 30px;
+  }
+
+  &__item-address {
+    padding: 0 80px;
+  }
+  
+  &__item-link {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #565872;
+    display: block;
+  }
+
+  &__box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__map {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  &__forms {
+    margin-right: 20px;
+  }
+
+  &__input-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  }
+
+  &__form-input {
+    width: 300px;
+  }
+
+  &__form--name {
+    margin-right: 20px;
+  }
+
+  &__textarea {
+    width: 100%;
+    height: 175px;
+    resize: none;
+    margin-bottom: 29px;
+  }
+
+  &__form-input,
+  &__textarea {
+    border: none;
+    background-color: #fafafa;
+    text-transform: uppercase;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #565872;
+  }
+
+  &__btn {
+    @extend %button;
+    text-transform: uppercase;
+  }
+
+}
+
+#map {
+  width: 100%;
+  height: 330px;
 }
