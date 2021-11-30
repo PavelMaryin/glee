@@ -55,40 +55,37 @@
 
         <div class="header__navigation navigation">
 
-          <a class="navigation__search button-round" href="#">
-            <svg class="button-round__icon">
-              <use class="button-round__image" xlink:href="images/sprite.svg#search">
+          <button class="navigation__search button-round" type="button">
+            <svg>
+              <use xlink:href="images/sprite.svg#search">
               </use>
             </svg>
             <span class="sr-only">Search link</span>
-          </a>
+          </button>
 
           <div class="navigation__box">
-            <a class="navigation__favorite" href="#">
-              <svg class="button-round__icon">
+            <button class="navigation__favorite" type="button">
+              <svg>
                 <use xlink:href="images/sprite.svg#favorite"></use>
               </svg>
               <span class="sr-only">Go to Favorite list</span>
               <span class="navigation__num">
                 0
-                <span class="sr-only">Quantity added in favorite</span>
               </span>
-            </a>
-            <div class="navigation__line"></div>
-            <a class="navigation__cart" href="#">
-              <svg class="button-round__icon">
+            </button>
+            <button class="navigation__cart" type="button">
+              <svg>
                 <use xlink:href="images/sprite.svg#cart"></use>
               </svg>
               <span class="sr-only">Go to Shopping cart list</span>
               <span class="navigation__num">
                 0
-                <span class="sr-only">Quantity added in cart</span>
               </span>
-            </a>
+            </button>
           </div>
-          <button class="button-round" href="#">
-            <svg class="button-round__icon">
-              <use class="button-round__image" xlink:href="images/sprite.svg#more">
+          <button class="button-round" type="button">
+            <svg>
+              <use xlink:href="images/sprite.svg#more">
               </use>
             </svg>
             <span class="sr-only">More options button</span>
@@ -101,124 +98,135 @@
   </header>
 
   <main class="main">
-    <h1 class="main__title sr-only">
-      At Exclusive Furniture, we make a house full of furniture affordable for everyone. Shop GLEE best furniture
-      store - Where Low Prices Live!
+    <h1 class="sr-only">
+      GLEE - the best furniture store!
     </h1>
     <section class="top-slider">
       <div class="container container--large">
-        <div class="top-slider__inner">
+        <h2 class="sr-only">
+          Discover best furniture - GLEE store!
+        </h2>
+        <ul class="top-slider__inner">
 
-          <div class="top-slider__contant">
+          <li class="top-slider__contant">
             <div class="top-slider__item container">
 
               <div class="top-slider__box">
                 <div class="top-slider__title">
-                  <span class="top-slider__name">
+                  <h3 class="top-slider__name">
                     Smart and trendy
-                  </span>
+                  </h3>
                   <p class="top-slider__text">
                     Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
                   </p>
                 </div>
                 <a class="top-slider__link button" href="#">
                   Shop Now
-                  <svg class="top-slider__arrows">
+                  <svg>
                     <use xlink:href="images/sprite.svg#arrows-btn"></use>
                   </svg>
                 </a>
               </div>
               <div class="top-slider__image">
-                <img class="top-slider__img" src="images/slider/photo1.png" alt="Product image">
+                <img class="top-slider__img" src="images/slider/photo1.png" alt="Double sofa">
               </div>
             </div>
-          </div>
+          </li>
 
-          <div class="top-slider__contant">
+          <li class="top-slider__contant">
             <div class="top-slider__item container">
               <div class="top-slider__box">
                 <div class="top-slider__title">
-                  <span class="top-slider__name">
+                  <h3 class="top-slider__name">
                     Smart and trendy
-                  </span>
-                  <p class="top-slider__text">
-                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                  </p>
+                  </h3>
+                  <div class="top-slider__text">
+                    <p>
+                      Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    </p>
+                  </div>
                 </div>
                 <a class="top-slider__link" href="#">
                   Shop Now
-                  <svg class="top-slider__arrows">
+                  <svg>
                     <use xlink:href="images/sprite.svg#arrows-btn"></use>
                   </svg>
                 </a>
               </div>
               <div class="top-slider__image">
-                <img class="top-slider__img" src="images/slider/photo1.png" alt="Product image">
+                <img class="top-slider__img" src="images/slider/photo1.png" alt="Double sofa">
               </div>
             </div>
-          </div>
+          </li>
 
-          <div class="top-slider__contant">
+          <li class="top-slider__contant">
             <div class="top-slider__item container">
               <div class="top-slider__box">
                 <div class="top-slider__title">
-                  <span class="top-slider__name">
+                  <h3 class="top-slider__name">
                     Smart and trendy
-                  </span>
-                  <p class="top-slider__text">
-                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                  </p>
+                  </h3>
+                  <div class="top-slider__text">
+                    <p>
+                      Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    </p>
+                  </div>
                 </div>
                 <a class="top-slider__link button" href="#">
                   Shop Now
-                  <svg class="top-slider__arrows">
+                  <svg>
                     <use xlink:href="images/sprite.svg#arrows-btn"></use>
                   </svg>
                 </a>
               </div>
               <div class="top-slider__image">
-                <img class="top-slider__img" src="images/slider/photo1.png" alt="Product image">
+                <img class="top-slider__img" src="images/slider/photo1.png" alt="Double sofa">
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="info-box">
-          <ul class="info-box__items">
-            <li class="info-box__item info-box__support">
-              <h3 class="info-box__subtitle">
-                Support 24/7.
-              </h3>
-              <div class="info-box__text">
-                <p>
-                  Contact us 24 hours a day, 7&nbspdays a week.
-                </p>
-              </div>
-            </li>
-            <li class="info-box__item info-box__delivery">
-              <h3 class="info-box__subtitle">
-                Delivery.
-              </h3>
-              <div class="info-box__text">
-                <p>
-                  Free shipping on all US order.
-                </p>
-              </div>
-            </li>
-            <li class="info-box__item info-box__payment">
-              <h3 class="info-box__subtitle">
-                100% Payment secure.
-              </h3>
-              <div class="info-box__text">
-                <p>
-                  We ensure secure payment with PEV.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
+          </li>
+        </ul>
     </section>
+
+    <div class="support-box">
+      <div class="container container--large">
+
+        <h2 class="sr-only">
+          Support infotmation
+        </h2>
+        <ul class="support-box__items">
+
+          <li class="support-box__item support-box__support">
+            <span class="support-box__subtitle">
+              Support 24/7.
+            </span>
+            <p>
+              Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+            </p>
+          </li>
+
+          <li class="support-box__item support-box__delivery">
+            <span class="support-box__subtitle">
+              Delivery.
+            </span>
+            <p>
+              Free shipping on all US order.
+            </p>
+          </li>
+
+          <li class="support-box__item support-box__payment">
+            <span class="support-box__subtitle">
+              100% Payment secure.
+            </span>
+            <p>
+              We ensure secure payment with PEV.
+            </p>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+
 
     <section class="week-products">
       <div class="container">
@@ -226,29 +234,29 @@
           Products of the week
         </h2>
 
-        <ul class="week-products__filter products-filter">
-          <li class="products-filter__item">
-            <button class="products-filter__btn" type="button" data-filter="all">
+        <ul class="week-products__filter mix-filter">
+          <li class="mix-filter__item">
+            <button class="mix-filter__btn" type="button" data-filter="all">
               All
             </button>
           </li>
-          <li class="products-filter__item">
-            <button class="products-filter__btn" type="button" data-filter=".category-a">
+          <li class="mix-filter__item">
+            <button class="mix-filter__btn" type="button" data-filter=".category-a">
               Furnitures
             </button>
           </li>
-          <li class="products-filter__item">
-            <button class="products-filter__btn" type="button" data-filter=".category-b">
+          <li class="mix-filter__item">
+            <button class="mix-filter__btn" type="button" data-filter=".category-b">
               Chairs
             </button>
           </li>
-          <li class="products-filter__item">
-            <button class="products-filter__btn" type="button" data-filter=".category-c">
+          <li class="mix-filter__item">
+            <button class="mix-filter__btn" type="button" data-filter=".category-c">
               Lighting
             </button>
           </li>
-          <li class="products-filter__item">
-            <button class="products-filter__btn" type="button" data-filter=".category-d">
+          <li class="mix-filter__item">
+            <button class="mix-filter__btn" type="button" data-filter=".category-d">
               Decor
             </button>
           </li>
@@ -259,232 +267,268 @@
           <li class="shop__contant-item mix category-a">
 
             <article class="product-card">
-
               <div class="product-card__box">
                 <img class="product-card__img" src="images/catalogue/product1.jpg" alt="Product image">
-                <div class="product-card__links">
+                <ul class="product-card__links">
 
-                  <a class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
-                    </svg>
-                    <span class="sr-only">Product page link</span>
-                  </a>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                      </svg>
+                      <span class="sr-only">Large photo</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
-                    </svg>
-                    <span class="sr-only">Add to cart</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                      </svg>
+                      <span class="sr-only">Add to cart</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
-                    </svg>
-                    <span class="sr-only">Add to favorite</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                      <span class="sr-only">Add to favorite</span>
+                    </button>
+                  </li>
 
-                </div>
+                </ul>
               </div>
+
+              <!-- блок для страницы shop.html -->
               <div class="product-card__description">
                 <h3 class="product-card__subtitle">Wooden radio</h3>
-                <div class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
-                </div>
-                <span class="product-card__price"><span class="product-card__currency">$</span>29.00
-                  <span class="sr-only">Price of product</span>
+                <span class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
                 </span>
-                <p class="product-card__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-
-                <button class="product-card__btn-cart button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                <span class="product-card__price">
+                  <span class="product-card__currency">$</span>
+                  29.00
+                </span>
+                <div class="product-card__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-card__btn-cart button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                <button class="product-card__btn-favorite button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
                   <span class="sr-only">Add to favorite</span>
                 </button>
               </div>
-
             </article>
           </li>
 
           <li class="shop__contant-item mix category-a">
-            <article class="product-card">
 
+            <article class="product-card">
               <div class="product-card__box">
                 <img class="product-card__img" src="images/catalogue/product2.jpg" alt="Product image">
-                <div class="product-card__links">
+                <ul class="product-card__links">
 
-                  <a class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
-                    </svg>
-                    <span class="sr-only">Product page link</span>
-                  </a>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                      </svg>
+                      <span class="sr-only">Large photo</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
-                    </svg>
-                    <span class="sr-only">Add to cart</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                      </svg>
+                      <span class="sr-only">Add to cart</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
-                    </svg>
-                    <span class="sr-only">Add to favorite</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                      <span class="sr-only">Add to favorite</span>
+                    </button>
+                  </li>
 
-                </div>
+                </ul>
               </div>
+
+              <!-- блок для страницы shop.html -->
               <div class="product-card__description">
                 <h3 class="product-card__subtitle">Wooden chair</h3>
-                <div class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
-                </div>
-                <span class="product-card__price"><span class="product-card__currency">$</span>29.00
-                  <span class="sr-only">Price of product</span>
+                <span class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
                 </span>
-                <p class="product-card__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-
-                <button class="product-card__btn-cart button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                <span class="product-card__price">
+                  <span class="product-card__currency">$</span>
+                  29.00
+                </span>
+                <div class="product-card__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-card__btn-cart button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                <button class="product-card__btn-favorite button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
                   <span class="sr-only">Add to favorite</span>
                 </button>
               </div>
             </article>
-
           </li>
 
           <li class="shop__contant-item mix category-a">
-            <article class="product-card">
 
+            <article class="product-card">
               <div class="product-card__box">
                 <img class="product-card__img" src="images/catalogue/product3.jpg" alt="Product image">
-                <div class="product-card__links">
+                <ul class="product-card__links">
 
-                  <a class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
-                    </svg>
-                    <span class="sr-only">Product page link</span>
-                  </a>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                      </svg>
+                      <span class="sr-only">Large photo</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
-                    </svg>
-                    <span class="sr-only">Add to cart</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                      </svg>
+                      <span class="sr-only">Add to cart</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
-                    </svg>
-                    <span class="sr-only">Add to favorite</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                      <span class="sr-only">Add to favorite</span>
+                    </button>
+                  </li>
 
-                </div>
+                </ul>
               </div>
-              <div class="product-card__description">
-                <h3 class="product-card__subtitle">Retro table</h3>
-                <div class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
-                </div>
-                <span class="product-card__price"><span class="product-card__currency">$</span>29.00
-                  <span class="sr-only">Price of product</span>
-                </span>
-                <p class="product-card__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
 
-                <button class="product-card__btn-cart button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+              <!-- блок для страницы shop.html -->
+              <div class="product-card__description">
+                <h3 class="product-card__subtitle">Wooden table</h3>
+                <span class="product-card__stars" data-rateyo-rating="3" data-rateyo-spacing="13px">
+                </span>
+                <span class="product-card__price">
+                  <span class="product-card__currency">$</span>
+                  29.00
+                </span>
+                <div class="product-card__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-card__btn-cart button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                <button class="product-card__btn-favorite button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
                   <span class="sr-only">Add to favorite</span>
                 </button>
               </div>
             </article>
-
           </li>
 
           <li class="shop__contant-item mix category-b">
-            <article class="product-card">
 
+            <article class="product-card">
               <div class="product-card__box">
                 <img class="product-card__img" src="images/catalogue/product4.jpg" alt="Product image">
-                <div class="product-card__links">
+                <ul class="product-card__links">
 
-                  <a class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
-                    </svg>
-                    <span class="sr-only">Product page link</span>
-                  </a>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                      </svg>
+                      <span class="sr-only">Large photo</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
-                    </svg>
-                    <span class="sr-only">Add to cart</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                      </svg>
+                      <span class="sr-only">Add to cart</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
-                    </svg>
-                    <span class="sr-only">Add to favorite</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                      <span class="sr-only">Add to favorite</span>
+                    </button>
+                  </li>
 
-                </div>
+                </ul>
               </div>
+
+              <!-- блок для страницы shop.html -->
               <div class="product-card__description">
                 <h3 class="product-card__subtitle">Wooden radio</h3>
-                <div class="product-card__stars" data-rateyo-rating="3" data-rateyo-spacing="13px">
-                </div>
-                <span class="product-card__price"><span class="product-card__currency">$</span>29.00
-                  <span class="sr-only">Price of product</span>
+                <span class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
                 </span>
-                <p class="product-card__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-
-                <button class="product-card__btn-cart button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                <span class="product-card__price">
+                  <span class="product-card__currency">$</span>
+                  29.00
+                </span>
+                <div class="product-card__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-card__btn-cart button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                <button class="product-card__btn-favorite button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
                   <span class="sr-only">Add to favorite</span>
                 </button>
@@ -493,56 +537,66 @@
           </li>
 
           <li class="shop__contant-item mix category-c">
-            <article class="product-card">
 
+            <article class="product-card">
               <div class="product-card__box">
                 <img class="product-card__img" src="images/catalogue/product5.jpg" alt="Product image">
-                <div class="product-card__links">
+                <ul class="product-card__links">
 
-                  <a class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
-                    </svg>
-                    <span class="sr-only">Product page link</span>
-                  </a>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                      </svg>
+                      <span class="sr-only">Large photo</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
-                    </svg>
-                    <span class="sr-only">Add to cart</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                      </svg>
+                      <span class="sr-only">Add to cart</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
-                    </svg>
-                    <span class="sr-only">Add to favorite</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                      <span class="sr-only">Add to favorite</span>
+                    </button>
+                  </li>
 
-                </div>
+                </ul>
               </div>
+
+              <!-- блок для страницы shop.html -->
               <div class="product-card__description">
                 <h3 class="product-card__subtitle">Wooden chair</h3>
-                <div class="product-card__stars" data-rateyo-rating="5" data-rateyo-spacing="13px">
-                </div>
-                <span class="product-card__price"><span class="product-card__currency">$</span>29.00
-                  <span class="sr-only">Price of product</span>
+                <span class="product-card__stars" data-rateyo-rating="5" data-rateyo-spacing="13px">
                 </span>
-                <p class="product-card__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-
-                <button class="product-card__btn-cart button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                <span class="product-card__price">
+                  <span class="product-card__currency">$</span>
+                  29.00
+                </span>
+                <div class="product-card__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-card__btn-cart button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                <button class="product-card__btn-favorite button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
                   <span class="sr-only">Add to favorite</span>
                 </button>
@@ -551,56 +605,66 @@
           </li>
 
           <li class="shop__contant-item mix category-d">
-            <article class="product-card">
 
+            <article class="product-card">
               <div class="product-card__box">
                 <img class="product-card__img" src="images/catalogue/product6.jpg" alt="Product image">
-                <div class="product-card__links">
+                <ul class="product-card__links">
 
-                  <a class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
-                    </svg>
-                    <span class="sr-only">Product page link</span>
-                  </a>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                      </svg>
+                      <span class="sr-only">Large photo</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
-                    </svg>
-                    <span class="sr-only">Add to cart</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                      </svg>
+                      <span class="sr-only">Add to cart</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
-                    </svg>
-                    <span class="sr-only">Add to favorite</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                      <span class="sr-only">Add to favorite</span>
+                    </button>
+                  </li>
 
-                </div>
+                </ul>
               </div>
+
+              <!-- блок для страницы shop.html -->
               <div class="product-card__description">
                 <h3 class="product-card__subtitle">Wooden radio</h3>
-                <div class="product-card__stars" data-rateyo-rating="4.5" data-rateyo-spacing="13px">
-                </div>
-                <span class="product-card__price"><span class="product-card__currency">$</span>29.00
-                  <span class="sr-only">Price of product</span>
+                <span class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
                 </span>
-                <p class="product-card__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-
-                <button class="product-card__btn-cart button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                <span class="product-card__price">
+                  <span class="product-card__currency">$</span>
+                  29.00
+                </span>
+                <div class="product-card__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-card__btn-cart button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                <button class="product-card__btn-favorite button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
                   <span class="sr-only">Add to favorite</span>
                 </button>
@@ -609,56 +673,66 @@
           </li>
 
           <li class="shop__contant-item mix category-a">
-            <article class="product-card">
 
+            <article class="product-card">
               <div class="product-card__box">
                 <img class="product-card__img" src="images/catalogue/product7.jpg" alt="Product image">
-                <div class="product-card__links">
+                <ul class="product-card__links">
 
-                  <a class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
-                    </svg>
-                    <span class="sr-only">Product page link</span>
-                  </a>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                      </svg>
+                      <span class="sr-only">Large photo</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
-                    </svg>
-                    <span class="sr-only">Add to cart</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                      </svg>
+                      <span class="sr-only">Add to cart</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
-                    </svg>
-                    <span class="sr-only">Add to favorite</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                      <span class="sr-only">Add to favorite</span>
+                    </button>
+                  </li>
 
-                </div>
+                </ul>
               </div>
+
+              <!-- блок для страницы shop.html -->
               <div class="product-card__description">
                 <h3 class="product-card__subtitle">White chair</h3>
-                <div class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
-                </div>
-                <span class="product-card__price"><span class="product-card__currency">$</span>29.00
-                  <span class="sr-only">Price of product</span>
+                <span class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
                 </span>
-                <p class="product-card__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-
-                <button class="product-card__btn-cart button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                <span class="product-card__price">
+                  <span class="product-card__currency">$</span>
+                  29.00
+                </span>
+                <div class="product-card__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-card__btn-cart button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                <button class="product-card__btn-favorite button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
                   <span class="sr-only">Add to favorite</span>
                 </button>
@@ -667,56 +741,66 @@
           </li>
 
           <li class="shop__contant-item mix category-c">
-            <article class="product-card">
 
+            <article class="product-card">
               <div class="product-card__box">
                 <img class="product-card__img" src="images/catalogue/product8.jpg" alt="Product image">
-                <div class="product-card__links">
+                <ul class="product-card__links">
 
-                  <a class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-zoom"></use>
-                    </svg>
-                    <span class="sr-only">Product page link</span>
-                  </a>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-zoom"></use>
+                      </svg>
+                      <span class="sr-only">Large photo</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
-                    </svg>
-                    <span class="sr-only">Add to cart</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                      </svg>
+                      <span class="sr-only">Add to cart</span>
+                    </button>
+                  </li>
 
-                  <button class="product-card__btn button-round" href="#">
-                    <svg class="button-round__icon">
-                      <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
-                    </svg>
-                    <span class="sr-only">Add to favorite</span>
-                  </button>
+                  <li class="product-card__button-item">
+                    <button class="product-card__btn button-round" type="button">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#favorite"></use>
+                      </svg>
+                      <span class="sr-only">Add to favorite</span>
+                    </button>
+                  </li>
 
-                </div>
+                </ul>
               </div>
+
+              <!-- блок для страницы shop.html -->
               <div class="product-card__description">
                 <h3 class="product-card__subtitle">Retro table</h3>
-                <div class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
-                </div>
-                <span class="product-card__price"><span class="product-card__currency">$</span>29.00
-                  <span class="sr-only">Price of product</span>
+                <span class="product-card__stars" data-rateyo-rating="4" data-rateyo-spacing="13px">
                 </span>
-                <p class="product-card__text">
-                  consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation
-                </p>
-
-                <button class="product-card__btn-cart button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#icon-prod-cart"></use>
+                <span class="product-card__price">
+                  <span class="product-card__currency">$</span>
+                  29.00
+                </span>
+                <div class="product-card__text">
+                  <p>
+                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation
+                  </p>
+                </div>
+                <button class="product-card__btn-cart button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" href="#">
-                  <svg class="button-round__icon">
-                    <use class="button-round__image" xlink:href="images/sprite.svg#favorite"></use>
+                <button class="product-card__btn-favorite button-square" type="button">
+                  <svg>
+                    <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
                   <span class="sr-only">Add to favorite</span>
                 </button>
@@ -727,48 +811,56 @@
         </ul>
       </div>
 
-      <div class="review">
-        <div class="container container--large">
-          <ul class="review__box">
-            <li class="review__item">
-              <img class="review__image" src="images/catalogue/review-prod1.png" alt="Table LED Lamp">
-              <div class="review__description">
-                <span class="review__subtitle">
-                  Mirum Notare Tellus
-                </span>
-                <p class="review__text">
+    </section>
+
+    <div class="container container--large">
+      <ul class="review__box">
+
+        <li class="review__item">
+          <article class="review__card">
+            <img class="review__image" src="images/catalogue/review-prod1.png" alt="Table LED Lamp">
+            <div class="review__description">
+              <span class="review__subtitle">
+                Mirum Notare Tellus
+              </span>
+              <div class="review__text">
+                <p>
                   LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
                 </p>
-                <a class="review__link" href="#">
-                  View More
-                  <svg class="review__arrows">
-                    <use xlink:href="images/sprite.svg#arrows-btn"></use>
-                  </svg>
-                </a>
               </div>
-            </li>
-            <li class="review__item">
-              <img class="review__image" src="images/catalogue/review-prod2.png" alt="Table LED Lamp">
-              <div class="review__description">
-                <span class="review__subtitle">
-                  Malesuada Tempor Euismod
-                </span>
-                <p class="review__text">
+              <a class="review__link" href="#">
+                View More
+                <svg class="review__arrows">
+                  <use xlink:href="images/sprite.svg#arrows-btn"></use>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+
+        <li class="review__item">
+          <article class="review__card">
+            <img class="review__image" src="images/catalogue/review-prod2.png" alt="Table LED Lamp">
+            <div class="review__description">
+              <span class="review__subtitle">
+                Malesuada Tempor Euismod
+              </span>
+              <div class="review__text">
+                <p>
                   50W 8000lm Compact Size for HID StreetLight Replacement LED CornLight
                 </p>
-                <a class="review__link" href="#">
-                  View More
-                  <svg class="review__arrows">
-                    <use xlink:href="images/sprite.svg#arrows-btn"></use>
-                  </svg>
-                </a>
               </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-    </section>
+              <a class="review__link" href="#">
+                View More
+                <svg class="review__arrows">
+                  <use xlink:href="images/sprite.svg#arrows-btn"></use>
+                </svg>
+              </a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </div>
 
     <section class="new-design">
       <div class="container">
@@ -776,39 +868,39 @@
           New Design
         </h2>
 
-        <ul class="new-design__filter products-filter">
-          <li class="products-filter__item">
-            <button class="products-filter__btn" type="button" data-filter="all">
+        <ul class="new-design__filter mix-filter">
+          <li class="mix-filter__item">
+            <button class="mix-filter__btn" type="button" data-filter="all">
               All
             </button>
           </li>
-          <li class="products-filter__item">
-            <button class="products-filter__btn" type="button" data-filter=".category-e">
+          <li class="mix-filter__item">
+            <button class="mix-filter__btn" type="button" data-filter=".category-e">
               Furnitures
             </button>
           </li>
-          <li class="products-filter__item">
-            <button class="products-filter__btn" type="button" data-filter=".category-f">
+          <li class="mix-filter__item">
+            <button class="mix-filter__btn" type="button" data-filter=".category-f">
               Chairs
             </button>
           </li>
-          <li class="products-filter__item">
-            <button class="products-filter__btn" type="button" data-filter=".category-g">
+          <li class="mix-filter__item">
+            <button class="mix-filter__btn" type="button" data-filter=".category-g">
               Lighting
             </button>
           </li>
-          <li class="products-filter__item">
-            <button class="products-filter__btn" type="button" data-filter=".category-h">
+          <li class="mix-filter__item">
+            <button class="mix-filter__btn" type="button" data-filter=".category-h">
               Decor
             </button>
           </li>
         </ul>
 
         <ul class="new-design__cards">
+
           <li class="new-design__item mix category-e">
             <a class="new-design__link" href="#">
-              <div class="new-design__box" style="background-image: url('images/catalogue/new-design1.jpg');"
-                alt="Classic cofa">
+              <div class="new-design__inner">
                 <div class="new-design__content">
                   <span class="new-design__subtitle">
                     Beat Flat Pendant Black
@@ -817,13 +909,17 @@
                     Classic
                   </p>
                 </div>
+                <div class="new-design__img-box">
+                  <img class="new-design__img" src="images/catalogue/new-design1.png" alt="Classic cofa">
+                  </img>
+                </div>
               </div>
             </a>
           </li>
+
           <li class="new-design__item mix category-e">
             <a class="new-design__link" href="#">
-              <div class="new-design__box" style="background-image: url('images/catalogue/new-design2.jpg');"
-                alt="Modern style double bed">
+              <div class="new-design__inner">
                 <div class="new-design__content">
                   <span class="new-design__subtitle">
                     Lampe Sur Pieds Bamboo
@@ -832,14 +928,17 @@
                     Classic
                   </p>
                 </div>
+                <div class="new-design__img-box">
+                  <img class="new-design__img" src="images/catalogue/new-design2.png" alt="Modern style double bed">
+                  </img>
+                </div>
               </div>
-              <div class="new-design__box">
             </a>
           </li>
-          <li class="new-design__item mix category-f">
+
+          <li class="new-design__item mix category-e">
             <a class="new-design__link" href="#">
-              <div class="new-design__box" style="background-image: url('images/catalogue/new-design3.jpg');"
-                alt="Black office armcheir">
+              <div class="new-design__inner">
                 <div class="new-design__content">
                   <span class="new-design__subtitle">
                     Rattan Rocking Chair
@@ -848,13 +947,17 @@
                     Classic
                   </p>
                 </div>
+                <div class="new-design__img-box">
+                  <img class="new-design__img" src="images/catalogue/new-design3.png" alt="Black office armcheir">
+                  </img>
+                </div>
               </div>
             </a>
           </li>
-          <li class="new-design__item mix category-f">
+
+          <li class="new-design__item mix category-e">
             <a class="new-design__link" href="#">
-              <div class="new-design__box" style="background-image: url('images/catalogue/new-design4.jpg');"
-                alt="Classic style bouble bed">
+              <div class="new-design__inner">
                 <div class="new-design__content">
                   <span class="new-design__subtitle">
                     Rattan Rocking Chair
@@ -863,13 +966,17 @@
                     Classic
                   </p>
                 </div>
+                <div class="new-design__img-box">
+                  <img class="new-design__img" src="images/catalogue/new-design4.png" alt="Classic style bouble bed">
+                  </img>
+                </div>
               </div>
             </a>
           </li>
-          <li class="new-design__item mix category-g">
+
+          <li class="new-design__item mix category-e">
             <a class="new-design__link" href="#">
-              <div class="new-design__box" style="background-image: url('images/catalogue/new-design5.jpg');"
-                alt="White office armchair">
+              <div class="new-design__inner">
                 <div class="new-design__content">
                   <span class="new-design__subtitle">
                     Rattan Rocking Chair
@@ -878,157 +985,157 @@
                     Classic
                   </p>
                 </div>
+                <div class="new-design__img-box">
+                  <img class="new-design__img" src="images/catalogue/new-design5.png" alt="White office armchair">
+                  </img>
+                </div>
               </div>
             </a>
           </li>
-          <li class="new-design__item mix category-h">
+
+          <li class="new-design__item mix category-e">
             <a class="new-design__link" href="#">
-              <div class="new-design__box" style="background-image: url('images/catalogue/new-design6.jpg');"
-                alt="Modern sofa for 3 person">
+              <div class="new-design__inner">
                 <div class="new-design__content">
                   <span class="new-design__subtitle">
-                    Lampe Sur Pieds Bamboo
+                    Beat Flat Pendant Black
                   </span>
                   <p class="new-design__text">
                     Classic
                   </p>
                 </div>
+                <div class="new-design__img-box">
+                  <img class="new-design__img" src="images/catalogue/new-design6.png" alt="Modern sofa for 3 person">
+                  </img>
+                </div>
               </div>
             </a>
           </li>
+
         </ul>
       </div>
     </section>
 
-    <div class="video-block">
-      <div class="video-block__popup" style="background-image: url('images/catalogue/video-cover.jpg');">
-        <a class="video-block__link" data-fancybox
-          href="https://www.youtube.com/watch?v=u3kz73Pe7q8&ab_channel=MaloneMediaGroup">
-          <svg class="video-block__icon">
-            <use xlink:href="images/sprite.svg#video-play-icon"></use>
-          </svg>
-          <span class="sr-only">Watch video</span>
-        </a>
+    <a class="video" data-fancybox href="https://www.youtube.com/watch?v=u3kz73Pe7q8&ab_channel=MaloneMediaGroup"
+      style="background-image: url('images/catalogue/video-cover.jpg')">
+      <svg>
+        <use xlink:href="images/sprite.svg#video-play-icon"></use>
+      </svg>
+      <span class="sr-only">Watch video</span>
       </div>
-    </div>
+    </a>
 
     <section class="articles">
-      <div class="articles__bg">
-      </div>
       <div class="container container--small">
         <div class="articles__header">
-          <h3 class="articles__title title">
+          <h2 class="articles__title title">
             Our Insights & Articles
-          </h3>
+          </h2>
           <a class="articles__view-all" href="#">
             View All
-            <svg class="articles__view-icon">
+            <svg>
               <use xlink:href="images/sprite.svg#arrow-right"></use>
             </svg>
           </a>
         </div>
         <ul class="articles__list">
 
-          <li class="articles__item">
-            <img class="articles__img" src="images/catalogue/article1.jpg" alt="Sleeping room">
-            <a href="#" class="articles__link">
-              News
-            </a>
-            <div class="articles__box">
-              <p class="articles__text">
-                Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
-              </p>
-              <div class="articles__bottom">
-                <a class="articles__data-link" href="#">
-                  <span class="articles__data">
-                    <svg class="articles__data-icon">
-                      <use xlink:href="images/sprite.svg#time"></use>
-                    </svg>
-                    28 January, 2020
-                  </span>
+          <li class="articles__item article-news">
+            <article class="article-news__inner">
+              <a class="article-news__link-img" href="#">
+                <img class="article-news__img" src="images/catalogue/article1.jpg" alt="Sleeping room">
+                <a class="article-news__link" href="#">
+                  News
                 </a>
-                <a class="articles__autor-link" href="#">
-                  <span class="articles__autor">
-                    <svg class="articles__autor-icon">
-                      <use xlink:href="images/sprite.svg#user-gray"></use>
-                    </svg>
-                    By admin
-                  </span>
-                </a>
-              </div>
-            </div>
+                <div class="article-news__box">
+                  <h3 class="article-news__subtitle">
+                    Diusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                  </h3>
+                  <div class="article-news__bottom">
+
+                    <time class="article-news__time" datetime="2020-01-28 18:00">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#time"></use>
+                      </svg>
+                      28 January, 2020
+                    </time>
+                    <span class="article-news__autor">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#user-gray"></use>
+                      </svg>
+                      By admin
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </article>
           </li>
 
-          <li class="articles__item">
-            <img class="articles__img" src="images/catalogue/article2.jpg" alt="Sleeping room">
-            <a href="#" class="articles__link">
-              News
-            </a>
-            <div class="articles__box">
-              <p class="articles__text">
-                Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              </p>
-              <div class="articles__bottom">
-                <a class="articles__data-link" href="#">
-                  <span class="articles__data">
-                    <svg class="articles__data-icon">
-                      <use xlink:href="images/sprite.svg#time"></use>
-                    </svg>
-                    28 January, 2020
-                  </span>
+          <li class="articles__item article-news">
+            <article class="article-news__inner">
+              <a class="article-news__link-img" href="#">
+                <img class="article-news__img" src="images/catalogue/article2.jpg" alt="Sleeping room">
+                <a class="article-news__link" href="#">
+                  News
                 </a>
-                <a class="articles__autor-link" href="#">
-                  <span class="articles__autor">
-                    <svg class="articles__autor-icon">
-                      <use xlink:href="images/sprite.svg#user-gray"></use>
-                    </svg>
-                    By admin
-                  </span>
-                </a>
-              </div>
-            </div>
+                <div class="article-news__box">
+                  <h3 class="article-news__subtitle">
+                    Aonsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  </h3>
+                  <div class="article-news__bottom">
+
+                    <time class="article-news__time" datetime="2020-01-28 18:00">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#time"></use>
+                      </svg>
+                      28 January, 2020
+                    </time>
+                    <span class="article-news__autor">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#user-gray"></use>
+                      </svg>
+                      By admin
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </article>
           </li>
 
-          <li class="articles__item">
-            <img class="articles__img" src="images/catalogue/article3.jpg" alt="Sleeping room">
-            <a href="#" class="articles__link">
-              News
-            </a>
-            <div class="articles__box">
-              <p class="articles__text">
-                Rncididunt ut labore et dolore magna aliqua. Ut enim
-              </p>
-              <div class="articles__bottom">
-                <a class="articles__data-link" href="#">
-                  <span class="articles__data">
-                    <svg class="articles__data-icon">
-                      <use xlink:href="images/sprite.svg#time"></use>
-                    </svg>
-                    28 January, 2020
-                  </span>
+          <li class="articles__item article-news">
+            <article class="article-news__inner">
+              <a class="article-news__link-img" href="#">
+                <img class="article-news__img" src="images/catalogue/article3.jpg" alt="Sleeping room">
+                <a class="article-news__link" href="#">
+                  News
                 </a>
-                <a class="articles__autor-link" href="#">
-                  <span class="articles__autor">
-                    <svg class="articles__autor-icon">
-                      <use xlink:href="images/sprite.svg#user-gray"></use>
-                    </svg>
-                    By admin
-                  </span>
-                </a>
-              </div>
-            </div>
+                <div class="article-news__box">
+                  <h3 class="article-news__subtitle">
+                    Rncididunt ut labore et dolore magna aliqua. Ut enim
+                  </h3>
+                  <div class="article-news__bottom">
+
+                    <time class="article-news__time" datetime="2020-01-28 18:00">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#time"></use>
+                      </svg>
+                      28 January, 2020
+                    </time>
+                    <span class="article-news__autor">
+                      <svg>
+                        <use xlink:href="images/sprite.svg#user-gray"></use>
+                      </svg>
+                      By admin
+                    </span>
+                  </div>
+                </div>
+              </a>
+            </article>
           </li>
 
         </ul>
-
       </div>
     </section>
-
-
-
-  </main>
-
-  <footer class="footer">
 
     <div class="partners">
       <div class="container">
@@ -1066,6 +1173,10 @@
         </ul>
       </div>
     </div>
+
+  </main>
+
+  <footer class="footer">
     <div class="container">
       <div class="footer__links">
         <div class="footer__contacts">
@@ -1075,20 +1186,20 @@
           <address class="footer__contacts">
             <ul class="contacts__list">
               <li class="contacts__item">
-                <div class="contacts__link">
-                  <span>Address:</span>
+                <a class="contacts__link">
+                  <span class="contacts__link-subtitle">Address:</span>
                   4772 Wines Lane Houston, TX 77032
-                </div>
+                </a>
               </li>
               <li class="contacts__item">
                 <a class="contacts__link" href="tel:+8323475843">
-                  <span>Telephone:</span>
+                  <span class="contacts__link-subtitle">Telephone:</span>
                   +832-347-5843
                 </a>
               </li>
               <li class="contacts__item">
                 <a class="contacts__link" href="mailto:contact@Glee.com">
-                  <span>Email:</span>
+                  <span class="contacts__link-subtitle">Email:</span>
                   contact@Glee.com
                 </a>
               </li>
@@ -1158,22 +1269,22 @@
         </div>
 
         <div class="footer__subscribe">
-          <span class="footer__subtitle subscribe__subtitle">
+          <span class="footer__subtitle">
             newsletter
           </span>
-          <div class="subscribe__text">
+          <div class="footer__item">
             <p>
               Subscribe by our newsletter and get
               update protidin.
             </p>
           </div>
 
-          <form class="subscribe__form" action="#">
-            <label class="subscribe__label">
-              <span class="sr-only">Write your email for subscribe newsletter</span>
-              <input class="subscribe__input" name="email" type="email" placeholder="Email address" id="email" required>
+          <form class="subscribe-form" action="#">
+            <label class="subscribe-form__label">
+              <span class="sr-only">Write your email for subscribe</span>
+              <input class="subscribe-form__input" name="email" type="email" placeholder="Email address" id="email" required>
             </label>
-            <button class="subscribe__form-btn" type="submit">
+            <button class="subscribe-form__form-btn" type="submit">
               Subscribe
             </button>
           </form>
