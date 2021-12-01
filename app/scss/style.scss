@@ -34,8 +34,7 @@
 
   &__item {
     margin-right: 34px;
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
+    font-family: "Rubik Medium", sans-serif;
     font-size: 15px;
     line-height: 1.3;
 
@@ -56,7 +55,7 @@
   &__search {
     margin-right: 20px;
     display: flex;
-    background-color: $peachb6;
+    background-color: $yellowb6;
     border-radius: 25px;
     fill: $blue4d;
     overflow: hidden;
@@ -72,7 +71,7 @@
       height: 50px;
       top: 0;
       left: 50%;
-      background-color: rgba(#ffffff, 1);
+      background-color: rgba($whiteff, 1);
     }
   }
 
@@ -90,7 +89,7 @@
       background-color: rgba($bluec8, 1);
 
       svg {
-        fill: #ffffff;
+        fill: $whiteff;
       }
     }
 
@@ -109,7 +108,7 @@
       background-color: $blue72;
 
       svg {
-        fill: #ffffff;
+        fill: $whiteff;
       }
     }
   }
@@ -121,7 +120,7 @@
     padding: 5px 6px;
     font-size: 10px;
     border-radius: 25px;
-    background-color: #ffffff;
+    background-color: $whiteff;
     text-align: center;
     line-height: 1;
   }
@@ -142,7 +141,7 @@
     background-color: $bluec8;
 
     svg {
-      fill: #ffffff;
+      fill: $whiteff;
     }
   }
 
@@ -150,7 +149,7 @@
     background-color: $blue72;
 
     svg {
-      fill: #ffffff;
+      fill: $whiteff;
     }
   }
 
@@ -168,7 +167,7 @@
 
 .top-slider {
   &__inner {
-    background-color: $peachb6;
+    background-color: $yellowb6;
     width: 100%;
   }
 
@@ -180,16 +179,15 @@
   }
 
   &__title {
-    font-family: "Rubik", sans-serif;
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 60px;
     max-width: 470px;
     @include clamp(2);
   }
-
+  
   &__name {
-    font-weight: 500;
+    font-family: "Rubik Medium", sans-serif;
     text-transform: uppercase;
     font-size: 72px;
     line-height: 1;
@@ -197,15 +195,14 @@
     margin-bottom: 24px;
     @include clamp(2);
   }
-
+  
   &__text {
-    font-weight: 400;
+    font-family: "Rubik Regular", sans-serif;
     max-width: 380px;
   }
 
   &__link {
-    font-family: "Rubik", sans-serif;
-    font-weight: 500;
+    font-family: "Rubik Medium", sans-serif;
     position: relative;
     font-size: 15px;
     line-height: 0.9;
@@ -228,19 +225,19 @@
 
     &:hover {
       background-color: $bluec8;
-      color: #ffffff;
+      color: $whiteff;
 
       svg {
-        fill: #ffffff;
+        fill: $whiteff;
       }
     }
 
     &:active {
       background-color: $blue72;
-      color: #ffffff;
+      color: $whiteff;
 
       svg {
-        fill: #ffffff;
+        fill: $whiteff;
       }
     }
   }
@@ -254,7 +251,7 @@
       position: absolute;
       z-index: 1;
       border-radius: 50%;
-      background: linear-gradient(270deg, #ffffff, rgba(0, 0, 0, 0));
+      background: linear-gradient(270deg, $whiteff, rgba($black00, 0));
       transform: translate(19%, -70%);
       width: 634px;
       height: 634px;
@@ -285,16 +282,15 @@
         border-radius: 50%;
         width: 30px;
         height: 29px;
-        background-color: rgba(255, 255, 255, 0.3);
-        font-family: "Rubik", sans-serif;
-        font-weight: 500;
+        background-color: rgba($whiteff, 0.3);
+        font-family: "Rubik Medium", sans-serif;
         font-size: 11px;
         line-height: 1;
         color: $blue4d;
       }
     }
     & .slick-active {
-      background-color: rgba(255, 255, 255, 1);
+      background-color: rgba($whiteff, 1);
       border-radius: 50%;
     }
   }
@@ -303,25 +299,23 @@
 .support-box {
   
   &__items {
-    background-color: rgba($peachb6, 0.2);
-    font-family: "DMSans", sans-serif;
+    background-color: rgba($yellowb6, 0.2);
     line-height: 1.9;
     display: grid;
     grid-template-columns: 570px 1fr 1fr;
   }
-
+  
   &__item {
     position: relative;
     width: 100%;
     padding: 35px 20px 40px 200px;
     margin: 0 auto;
-    font-weight: 400;
+    font-family: "DMSans Regular", sans-serif;
     font-size: 16px;
-    color: #585858;
+    color: $brown58;
     
     p {
       @include clamp(2);
-
     }
 
     &:nth-child(2) {
@@ -356,15 +350,14 @@
     width: 220px;
     font-weight: 700;
     font-size: 18px;
-    color: #414141;
+    color: $gray41;
     @include clamp(1);
   }
 }
 
 .week-products {
   padding-top: 70px;
-  font-family: "DMSans", sans-serif;
-  font-weight: 700;
+  font-family: "DMSans Bold", sans-serif;
 
   &__title {
     margin-bottom: 30px;
@@ -400,14 +393,14 @@
     position: relative;
     font-size: 16px;
     line-height: 1;
-    color: #8b8b8b;
+    color: $gray8b;
     background-color: transparent;
     border: none;
     @extend %text-effect;
   }
 
   &__btn.mixitup-control-active {
-    color: #191919;
+    color: $black19;
   }
 }
 
@@ -431,7 +424,7 @@
   &__card {
     height: 390px;
     max-width: 870px;
-    background-color: rgba($peachb6, 0.4);
+    background-color: rgba($yellowb6, 0.4);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -451,15 +444,14 @@
   }
 
   &__text {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-family: "Rubik Regular", sans-serif;
     line-height: 1.8;
     margin-bottom: 40px;
     @include clamp(2);
   }
 
   &__link {
-    font-family: "Rubik", sans-serif;
+    font-family: "Rubik Regular", sans-serif;
     font-size: 15px;
     color: $blue72;
     padding: 20px;
@@ -480,8 +472,8 @@
 
     &:hover,
     &:hover use {
-      color: #ffffff;
-      fill: #ffffff;
+      color: $whiteff;
+      fill: $whiteff;
       background-color: $bluec8;
     }
 
@@ -532,7 +524,7 @@
     }
 
     &:active {
-      box-shadow: 0 0 20px $peachb6;
+      box-shadow: 0 0 20px $yellowb6;
     }
   }
 
@@ -605,7 +597,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   opacity: 1;
-  background-color: #000000;
+  background-color: $black00;
   box-shadow: none;
   transition: box-shadow 0.3s;
 
@@ -614,7 +606,7 @@
       position: absolute;
       width: 100%;
       height: 100%;
-      background-color: #000000;
+      background-color: $black00;
       opacity: 0;
       transition: opacity 0.3s;
     }
@@ -629,7 +621,7 @@
       width: 75px;
       height: 75px;
       border-radius: 50%;
-      background-color: #ffffff;
+      background-color: $whiteff;
       opacity: 0.1;
       transition: width 0.3s ease-in, height 0.3s ease-in, opacity 0.3s ease-in-out;
     }
@@ -644,12 +636,12 @@
     position: relative;
     width: 22px;
     height: 25px;
-    fill: #ffffff;
+    fill: $whiteff;
     transform: translateX(10%);
   }
 
   &:active {
-    box-shadow: 0 0 20px $peachb6;
+    box-shadow: 0 0 20px $yellowb6;
   }
 }
 
@@ -662,7 +654,7 @@
     top: 331px;
     height: 170px;
     width: 100%;
-    background-color: rgba($peachb6, 0.2);
+    background-color: rgba($yellowb6, 0.2);
     z-index: -1;
   }
   
@@ -676,14 +668,14 @@
   &__view-all {
     position: relative;
     font-weight: 700;
-    color: #262626;
+    color: $gray26;
     @extend %text-effect;
 
     svg {
       width: 6px;
       height: 10px;
       margin-left: 15px;
-      fill: #262626;
+      fill: $gray26;
     }
   }
 
@@ -697,7 +689,7 @@
   position: relative;
   height: 420px;
   width: 370px;
-  background-color: #ffffff;
+  background-color: $whiteff;
 
   &__inner {
     display: inline-block;
@@ -710,7 +702,7 @@
     }
 
     &:active {
-      box-shadow: 0 0 20px $peachb6;
+      box-shadow: 0 0 20px $yellowb6;
     }
   }
 
@@ -727,7 +719,7 @@
       position: absolute;
       width: 315px;
       height: 1px;
-      background-color: $lightgraye0; 
+      background-color: $graye0; 
       top: 110px;
       left: 30px;
     }
@@ -757,16 +749,15 @@
 
   &__link {
     position: absolute;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
+    font-family: "Poppins Bold", sans-serif;
     font-size: 14px;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $whiteff;
     padding: 4px 31px;
     border-radius: 15px;
     top: 233px;
     left: 28px;
-    background-color: $whitebluec8;
+    background-color: $bluec8;
     transition: background-color 0.3s;
     z-index: 20;
 
@@ -787,12 +778,12 @@
   &__autor {
     text-transform: uppercase;
     font-size: 12px;
-    color: #222933;
+    color: $blue33;
 
     svg {
       width: 10px;
       height: 10px;
-      fill: #222933;
+      fill: $blue33;
     }
   }
 }
@@ -800,7 +791,7 @@
 .partners {
   width: 100%;
   padding: 90px 0 70px;
-  background-color: rgba($peachb6, 0.2);
+  background-color: rgba($yellowb6, 0.2);
   margin-bottom: 65px;
 
   &__item {
@@ -814,8 +805,7 @@
 }
 
 .login {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-family: "Rubik Regular", sans-serif;
   font-size: 14px;
 
   &__header {
@@ -889,7 +879,7 @@
     width: 14px;
     height: 14px;
     border-radius: 1px;
-    background-color: #ebebeb;
+    background-color: $grayeb;
     position: relative;
     display: inline-block;
   }
@@ -905,24 +895,24 @@
   }
 
   &__btn-login {
-    color: #ffffff;
-    background: $whitebluec8;
+    color: $whiteff;
+    background: $bluec8;
     border: none;
     margin: 36px 0 32px;
 
     &:hover {
-      color: #ffffff;
+      color: $whiteff;
       background: $blue4d;
     }
   }
 
   &__btn-account {
     color: $blue4d;
-    background: #ffffff;
-    border: 2px solid $whitebluec8;
+    background: $whiteff;
+    border: 2px solid $bluec8;
 
     &:hover {
-      color: #ffffff;
+      color: $whiteff;
       background: $blue4d;
       border: 2px solid $blue4d;
     }
@@ -930,14 +920,13 @@
 }
 
 .breadcrumbs {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-family: "Rubik Regular", sans-serif;
   font-size: 14px;
 
   &__list {
     display: flex;
     justify-content: center;
-    color: rgba(#222933, 0.4);
+    color: rgba($blue33, 0.4);
   }
   &__item {
     position: relative;
@@ -964,8 +953,7 @@
   line-height: 1.6;
 
   &__links {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-family: "Rubik regular", sans-serif;
     display: flex;
     justify-content: space-between;
     padding-bottom: 60px;
@@ -996,7 +984,7 @@
   &__subtitle {
     font-weight: 700;
     text-transform: uppercase;
-    color: #1f2044;
+    color: $blue64;
     font-size: 16px;
     line-height: 1.3;
     margin: 20px 0;
@@ -1061,16 +1049,18 @@
 }
 
 .subscribe-form {
+  display: flex;
+
   &__input {
     width: 170px;
     height: 38px;
-    background-color: rgba($peachb6, 0.2);
+    background-color: rgba($yellowb6, 0.2);
     border: none;
     padding: 0 15px 3px;
 
     &::placeholder {
       font-weight: 400;
-      color: #234969;
+      color: $blue69;
       font-size: 12px;
     }
   }
@@ -1080,7 +1070,7 @@
     width: 100px;
     height: 38px;
     background-color: $bluec8;
-    color: #ffffff;
+    color: $whiteff;
     border: none;
     transition: background-color 0.3s;
     
@@ -1092,16 +1082,11 @@
       background-color: $blue4d;
     }
   }
-
-  &__label {
-    display: flex;
-  }
 }
 
 .shop {
   &__subtitle {
-    font-family: "Rubik", sans-serif;
-    font-weight: 300;
+    font-family: "Rubik Light", sans-serif;
     font-size: 36px;
     margin-bottom: 12px;
   }
@@ -1137,7 +1122,7 @@
   &__line {
     width: 38px;
     height: 2px;
-    fill: $whitebluec8;
+    fill: $bluec8;
     margin-left: 12px;
     margin-bottom: 5px;
   }
@@ -1150,7 +1135,7 @@
     @extend %checkbox-hidden;
 
     &:checked + .filter-category__box {
-      background-color: rgba($whitebluec8, 0.2);
+      background-color: rgba($bluec8, 0.2);
       color: $blue4d;
 
       .filter-category__checkbox--gray {
@@ -1170,15 +1155,15 @@
   &__arrow-right {
     width: 5px;
     height: 10px;
-    fill: $whitebluec8;
+    fill: $bluec8;
   }
 
   &__checkbox {
-    font-family: "Rubik", sans-serif;
+    font-family: "Rubik Regular", sans-serif;
     display: block;
 
     &--gray {
-      color: #b3b3b3;
+      color: $grayb3;
     }
   }
 }
@@ -1193,14 +1178,14 @@
 .irs--flat .irs-line {
   top: 0;
   height: 2px;
-  background-color: rgba(#a3bbc8, 0.66);
+  background-color: rgba($bluec8, 0.66);
   border-radius: 0;
 }
 
 .irs--flat .irs-bar {
   top: 0;
   height: 3px;
-  background-color: rgba(#a3bbc8, 1);
+  background-color: rgba($bluec8, 1);
 }
 
 .irs--flat .irs-handle > i:first-child {
@@ -1210,7 +1195,7 @@
   left: 1px;
   width: 15px;
   height: 15px;
-  background-color: rgba(#a3bbc8, 1);
+  background-color: rgba($bluec8, 1);
   transition: background-color 0.3s;
 }
 
@@ -1240,8 +1225,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-family: "Rubik regular", sans-serif;
     font-size: 14px;
     padding-right: 7px;
   }
@@ -1249,7 +1233,7 @@
 
 .pagination {
   text-align: center;
-  font-family: "Rubik", sans-serif;
+  font-family: "Rubik Regular", sans-serif;
   margin-bottom: 120px;
 
   &__list {
@@ -1266,12 +1250,12 @@
     position: relative;
     display: inline-block;
     padding: 15px 20px;
-    border: 1px solid $whitebluec8;
+    border: 1px solid $bluec8;
     @extend %text-effect;
 
     &--active {
-      color: #ffffff;
-      background-color: $whitebluec8;
+      color: $whiteff;
+      background-color: $bluec8;
     }
   }
 }
@@ -1299,14 +1283,13 @@
   &__img {
     width: 70px;
     height: 70px;
-    border: 2px solid #f2f2f2;
+    border: 2px solid $grayf2;
     object-fit: contain;
     margin-right: 20px;
   }
 
   &__card-subtitle {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-family: "Rubik Regular", sans-serif;
     font-size: 14px;
     margin: 4px 0 10px;
     @include clamp(2);
@@ -1323,7 +1306,7 @@
 
 .product-card {
   position: relative;
-  box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+  box-shadow: 0px 6px 47px 3px rgba($black25, 0.05);
   width: 270px;
   height: 380px;
   border-radius: 10px;
@@ -1459,13 +1442,13 @@
         min-width: 100%;
         height: 500px;
         border-radius: 0;
-        font-family: "Rubik", sans-serif;
-        color: #333333;
+        font-family: "Rubik Regular", sans-serif;
+        color: $gray33;
 
         &__box {
           width: 370px;
           height: 100%;
-          border: 2px solid #e5e5e5;
+          border: 2px solid $graye5;
           margin-bottom: 0;
           flex-shrink: 0;
         }
@@ -1519,25 +1502,25 @@
 
         &__btn-cart {
           background-color: $bluec8;
-          box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+          box-shadow: 0px 6px 47px 3px rgba($black25, 0.05);
 
           :hover {
             background-color: $blue4d;
-            fill: #ffffff;
+            fill: $whiteff;
           }
         }
 
         &__btn-cart svg {
-          fill: #ffffff;
+          fill: $whiteff;
         }
 
         &__btn-favorite {
-          background-color: #ffffff;
-          box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
+          background-color: $whiteff;
+          box-shadow: 0px 6px 47px 3px rgba($black25, 0.05);
 
           :hover {
             background-color: $blue4d;
-            fill: #ffffff;
+            fill: $whiteff;
           }
         }
 
@@ -1551,8 +1534,7 @@
 }
 
 .product-page {
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
+  font-family: "Rubik Regular", sans-serif;
 
   &__inner {
     margin: 125px 0 90px;
@@ -1573,7 +1555,7 @@
 
   &__thumb-item {
     height: 160px;
-    border: 2px solid #f2f2f2;
+    border: 2px solid $grayf2;
     margin-bottom: 19px;
     overflow: hidden;
 
@@ -1595,7 +1577,7 @@
   &__big-item {
     height: 530px;
     width: 387px;
-    border: 2px solid #f2f2f2;
+    border: 2px solid $grayf2;
     object-fit: contain;
     overflow: hidden;
   }
@@ -1684,11 +1666,11 @@
     transition: background-color 0.3s;
 
     &:hover {
-      color: #ffffff;
+      color: $whiteff;
     }
     &--active {
       background-color: $blue4d;
-      color: #ffffff;
+      color: $whiteff;
     }
   }
 
@@ -1770,7 +1752,7 @@
 
     &:checked + .product-page__star {
       use {
-        fill: #ffc35b;
+        fill: $yellow5b;
       }
     }
   }
@@ -1834,8 +1816,8 @@
       width: 50px;
       height: 50px;
       border-radius: 5px;
-      border: 2px solid #edf1f4;
-      background-color: #ffffff;
+      border: 2px solid $bluef4;
+      background-color: $whiteff;
       font-size: 0;
       transition: border-color 0.3s;
       background-size: 22px;
@@ -1865,7 +1847,7 @@
 
 .jq-number__field {
   width: 148px;
-  border: 1px solid $whitebluec8;
+  border: 1px solid $bluec8;
   border-radius: 0;
   box-shadow: none;
 }
@@ -1877,7 +1859,7 @@
   outline: none;
   background: none;
   font: 14px "Rubik", sans-serif;
-  color: #333333;
+  color: $gray33;
   text-align: center;
 }
 
@@ -1896,7 +1878,7 @@
 .jq-number__spin.minus {
   height: 100%;
   left: 0;
-  border-right: 1px solid $whitebluec8;
+  border-right: 1px solid $bluec8;
   width: 50px;
   height: 100%;
 }
@@ -1913,7 +1895,7 @@
 .jq-number__spin.plus {
   height: 100%;
   right: 0;
-  border-left: 1px solid $whitebluec8;
+  border-left: 1px solid $bluec8;
   width: 50px;
   height: 100%;
 }
@@ -1932,14 +1914,13 @@
 }
 
 .jq-number__spin:active {
-  background: $whitebluec8;
+  background: $bluec8;
   box-shadow: none;
 }
 
 .top {
   &__subtitle {
-    font-family: "Rubik", sans-serif;
-    font-weight: 300;
+    font-family: "Rubik Light", sans-serif;
     font-size: 36px;
     margin-bottom: 12px;
   }
@@ -1984,10 +1965,9 @@
     bottom: 0;
     left: 0;
     padding: 30px 20px;
-    background-color: $whitebluec8;
-    color: #ffffff;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    background-color: $bluec8;
+    color: $whiteff;
+    font-family: "Rubik Regular", sans-serif;
     font-size: 12px;
     text-transform: uppercase;
   }
@@ -1996,7 +1976,7 @@
   &__autor-svg {
     width: 12px;
     height: 14px;
-    fill: #ffffff;
+    fill: $whiteff;
     margin-right: 5px;
     margin-bottom: -2px;
   }
@@ -2023,20 +2003,19 @@
 
   &__btn {
     padding: 20px;
-    border: 1px solid $whitebluec8;
-    color: $whitebluec8;
-    font-family: "Nunito", sans-serif;
-    font-weight: 700;
+    border: 1px solid $bluec8;
+    color: $bluec8;
+    font-family: "Nunito Bold", sans-serif;
     font-size: 15px;
     transition: background-color 0.3s, border 0.3s, color 0.3s;
 
     &:hover {
       background-color: $blue4d;
       border: 1px solid $blue4d;
-      color: #ffffff;
+      color: $whiteff;
 
       .blog__arrow-svg {
-        fill: #ffffff;
+        fill: $whiteff;
       }
     }
   }
@@ -2045,7 +2024,7 @@
     width: 22px;
     height: 9px;
     margin-left: 45px;
-    fill: $whitebluec8;
+    fill: $bluec8;
     transition: fill 0.3s;
   }
 
@@ -2059,7 +2038,7 @@
 
   &__form {
     display: flex;
-    border: 1px solid $whitebluec8;
+    border: 1px solid $bluec8;
     border-radius: 5px;
     width: 100%;
     height: 43px;
@@ -2082,7 +2061,7 @@
     width: 48px;
     margin-right: -1px;
     border-radius: 5px;
-    background-color: $whitebluec8;
+    background-color: $bluec8;
     border: none;
     transition: background-color 0.3s;
 
@@ -2090,7 +2069,7 @@
       background-color: $blue4d;
 
       .filter-search__icon {
-        fill: #ffffff;
+        fill: $whiteff;
       }
     }
   }
@@ -2127,20 +2106,19 @@
   }
 
   &__text {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-family: "Rubik Regular", sans-serif;
     font-size: 14px;
     line-height: 1.4;
-    color: #333333;
+    color: $gray33;
     margin-bottom: 6px;
     @include clamp(2);
   }
 
   &__date {
     position: relative;
-    font-family: "Rubik", sans-serif;
+    font-family: "Rubik Regular", sans-serif;
     font-size: 12px;
-    color: #9a9a9a;
+    color: $gray9a;
     transition: color 0.3s;
 
     &:hover {
@@ -2158,14 +2136,13 @@
 
 .blog-page {
   &__item {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-family: "Rubik Regular", sans-serif;
     color: $blue4d;
     padding-bottom: 0;
 
     h3 {
       font-size: 36px;
-      color: #333333;
+      color: $gray33;
       padding-bottom: 30px;
     }
 
@@ -2250,8 +2227,8 @@
     display: flex;
     justify-content: space-between;
     padding: 25px 0;
-    border-top: 2px solid #ebebeb;
-    border-bottom: 2px solid #ebebeb;
+    border-top: 2px solid $grayeb;
+    border-bottom: 2px solid $grayeb;
     margin-bottom: 70px;
   }
 
@@ -2280,7 +2257,7 @@
 
   &__tags-link {
     margin-left: 10px;
-    color: #a1a1a1;
+    color: $graya1;
     transition: color 0.3s;
 
     &:hover {
@@ -2299,7 +2276,7 @@
   &__social-svg {
     width: 16px;
     height: 16px;
-    fill: #a1a1a1;
+    fill: $graya1;
     transition: fill 0.3s;
 
     &:hover {
@@ -2310,7 +2287,7 @@
   &__comments-item {
     display: flex;
     padding: 30px 0;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid $grayeb;
 
     &:last-of-type {
       border-bottom: none;
@@ -2322,10 +2299,9 @@
   }
 
   &__subtitle {
-    font-family: "Rubik", sans-serif;
-    font-weight: 700;
+    font-family: "Rubik Bold", sans-serif;
     font-size: 24px;
-    color: #436372;
+    color: $blue72;
     margin-bottom: 30px;
   }
 
@@ -2337,7 +2313,7 @@
 
   &__comments-date {
     font-size: 14px;
-    color: #9e9e9e;
+    color: $gray9e;
   }
 
   &__comments-img {
@@ -2350,14 +2326,13 @@
   }
 
   &__comments-name {
-    font-family: "Rubik", sans-serif;
-    font-weight: 700;
+    font-family: "Rubik Bold", sans-serif;
     font-size: 16px;
-    color: #436372;
+    color: $blue72;
   }
 
   &__comments-text {
-    color: #565872;
+    color: $blue73;
     line-height: 1.9;
     margin-bottom: 20px;
   }
@@ -2367,7 +2342,7 @@
     border: none;
     background-color: transparent;
     padding: 0;
-    color: #516278;
+    color: $blue78;
     font-size: 14px;
     transition: color 0.3s;
 
@@ -2380,7 +2355,7 @@
       height: 15px;
       right: -20px;
       top: 2px;
-      fill: #516278;
+      fill: $blue78;
     }
 
     &:hover {
@@ -2392,10 +2367,9 @@
     padding: 70px 0 120px;
 
     .product-page__review-title {
-      font-family: "Rubik", sans-serif;
-      font-weight: 700;
+      font-family: "Rubik Bold", sans-serif;
       font-size: 24px;
-      color: #436372;
+      color: $blue72;
       padding-bottom: 30px;
     }
 
@@ -2410,8 +2384,7 @@
   padding: 0 0 120px;
 
   &__subtitle {
-    font-family: "DMSans", sans-serif;
-    font-weight: 700;
+    font-family: "DMSans Bold", sans-serif;
     font-size: 35px;
     text-align: center;
     padding-bottom: 70px;
@@ -2426,8 +2399,8 @@
     position: relative;
     width: 370px;
     height: 380px;
-    background-color: #fbfbfb;
-    border: 2px solid #fbfbfb;
+    background-color: $whitefb;
+    border: 2px solid $whitefb;
     transition: border 0.3s, box-shadow 0.3s;
     text-align: center;
     padding-top: 70px;
@@ -2436,14 +2409,14 @@
 
     &:hover {
       border: 2px solid $bluec8;
-      box-shadow: 0px 5px 20px 0px rgba(146, 146, 146, 0.3);
+      box-shadow: 0px 5px 20px 0px rgba($gray92, 0.3);
 
       .contact__item-icon {
         background-color: $bluec8;
       }
 
       .contact__item-svg {
-        fill: #ffffff;
+        fill: $whiteff;
       }
     }
   }
@@ -2453,7 +2426,7 @@
     width: 80px;
     height: 80px;
     border-radius: 20px;
-    background-color: #ffffff;
+    background-color: $whiteff;
     margin: 0 auto 70px;
     transition: background-color 0.3s;
   }
@@ -2470,10 +2443,9 @@
 
   &__item-subtitle {
     display: block;
-    font-family: "DMSans", sans-serif;
-    font-weight: 700;
+    font-family: "DMSans Bold", sans-serif;
     font-size: 20px;
-    color: #222222;
+    color: $black22;
     margin-bottom: 30px;
   }
 
@@ -2483,10 +2455,9 @@
   }
 
   &__item-link {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-family: "Rubik Regular", sans-serif;
     font-size: 16px;
-    color: #565872;
+    color: $blue73;
     display: block;
   }
 
@@ -2562,13 +2533,12 @@
   &__form-input,
   &__textarea {
     border: none;
-    background-color: #fafafa;
+    background-color: $whitefb;
     text-transform: uppercase;
     padding: 20px 60px 20px 20px;
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
+    font-family: "Rubik Regular", sans-serif;
     font-size: 16px;
-    color: #565872;
+    color: 3$blue73;
   }
 
   &__btn {

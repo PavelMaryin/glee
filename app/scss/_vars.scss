@@ -1,16 +1,43 @@
+$whiteff:   #ffffff;
+$whitefb:   #fbfbfb;
+
 $bluef4:    #edf1f4;
 $bluec8:    #a3bbc8;
 $blue72:    #436372;
-$peachb6:   #fcd7b6;
+$blue73:    #565873;
+$blue78:    #516278;
 $blue4d:    #243f4d;
-$black19:   #191919;
-$gray7b:    #7b7b7b;
-$whitebluec8:#a3bbc8;
-$gray8b:    #8b8b8b;
+$blue69:    #234969;
+$blue64:    #393a64;
+$blue33:    #222933;
+
+$yellowb6:  #fcd7b6;
+$yellow5b:  #ffc35b;
+
+$graye0:    #e0e0e0;
+$grayf2:    #f2f2f2;
+$graye5:    #e5e5e5;
 $grayf8:    #f8f8f8;
+$grayeb:    #ebebeb;
 $grayf6:    #f6f6f6;
+$grayb3:    #b3b3b3;
+$gray9e:    #9e9e9e;
+$gray9a:    #9a9a9a;
+$graya1:    #a1a1a1;
+$gray92:    #929292;
+$gray7b:    #7b7b7b;
+$gray8b:    #8b8b8b;
 $gray26:    #262626;
-$lightgraye0:#e0e0e0;
+$gray41:    #414141;
+$gray33:    #333333;
+
+$brown58:   #585858;
+
+$black25:   #252525;
+$black22:   #222222;
+$black19:   #191919;
+$black00:   #000000;
+
 
 %dmsans {
   font-family: 'DMSans', sans-serif;
@@ -20,6 +47,7 @@ $lightgraye0:#e0e0e0;
   font-family: 'Rubik', sans-serif;
 }
 
+// миксин для ограничения величины текста
 @mixin clamp($clamp) {
   -webkit-line-clamp: $clamp;
   -webkit-box-orient: vertical;
