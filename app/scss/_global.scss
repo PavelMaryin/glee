@@ -7,10 +7,11 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: $blue72;
   background-color: $whiteff;
-  font-family: 'DMSans', sans-serif;
+  font-family: "DMSans Regular", sans-serif;
+  font-style: normal;
   font-size: 16px;
+  color: $blue72;
 }
 
 .main {
@@ -41,8 +42,7 @@ body {
 }
 
 .title {
-  @extend %dmsans;
-  font-weight: 700;
+  font-family: "DMSans Bold", sans-serif;
   font-size: 36px;
   line-height: 1;
   color: $black00;
@@ -54,11 +54,10 @@ body {
   background-color: $bluec8;
 }
 
-%button {
+.button {
   padding: 18px 53px 15px;
   border-radius: 5px;
-  font-family: 'Rubik', sans-serif;
-  font-weight: 400;
+  font-family: "Rubik Regular", sans-serif;
   font-size: 15px;
   color: $whiteff;
   background-color: $bluec8;
@@ -71,7 +70,7 @@ body {
     }
 }
 
-%text-effect {
+.text-effect {
   outline: transparent;
   border-bottom: 1px solid transparent;
   transition: color 0.5s, border-color 0.4s, padding-bottom 0.4s;

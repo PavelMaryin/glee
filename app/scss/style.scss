@@ -23,10 +23,13 @@
   }
 }
 
-.logo__img {
+.logo {
+  
+  &__img{
   width: 146px;
   height: 49px;
   object-fit: contain;
+  }
 }
 
 .menu {
@@ -46,7 +49,6 @@
   &__link {
     color: $blue72;
     position: relative;
-    @extend %text-effect;
   }
 }
 
@@ -396,7 +398,6 @@
     color: $gray8b;
     background-color: transparent;
     border: none;
-    @extend %text-effect;
   }
 
   &__btn.mixitup-control-active {
@@ -669,7 +670,6 @@
     position: relative;
     font-weight: 700;
     color: $gray26;
-    @extend %text-effect;
 
     svg {
       width: 6px;
@@ -864,7 +864,6 @@
 
   &__remember {
     position: relative;
-    @extend %text-effect;
   }
 
   &__checkbox {
@@ -996,7 +995,6 @@
     color: $gray7b;
     position: relative;
     margin-bottom: 10px;
-    @extend %text-effect;
   }
 
   &__logo {
@@ -1034,7 +1032,6 @@
 
   &__nav-link {
     position: relative;
-    @extend %text-effect;
   }
 
   &__nav-item {
@@ -1251,7 +1248,6 @@
     display: inline-block;
     padding: 15px 20px;
     border: 1px solid $bluec8;
-    @extend %text-effect;
 
     &--active {
       color: $whiteff;
@@ -1630,7 +1626,6 @@
   &__btn {
     margin-left: 15px;
     text-transform: uppercase;
-    @extend %button;
     padding-top: 17px;
     padding-bottom: 18px;
   }
@@ -1658,7 +1653,6 @@
   }
 
   &__tabs-btn {
-    @extend %button;
     color: $blue4d;
     transition: color 0.3s;
     font-size: 18px;
@@ -1785,10 +1779,6 @@
     margin-bottom: 20px;
     height: 224px;
     resize: none;
-  }
-
-  &__review-btn {
-    @extend %button;
   }
 }
 
@@ -2542,7 +2532,6 @@
   }
 
   &__btn {
-    @extend %button;
     text-transform: uppercase;
   }
 }

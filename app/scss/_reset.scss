@@ -60,5 +60,8 @@ address {
 
 button {
   cursor: pointer;
-  display: block;
+  display: inline-block;
+  color: inherit;
+  border: none;
+  background-color: transparent;
 }

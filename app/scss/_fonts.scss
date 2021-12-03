@@ -56,7 +56,8 @@
   font-family: "Rubic Bold";
   font-style: normal;
   font-weight: 700;
-    // добавить шрифты!!!!
+  src:  url('../fonts/Rubik/Rubik-Bold.woff2') format("woff2"),
+        url('../fonts/Rubik/Rubik-Bold.woff') format("woff");
   font-display: swap;
 }
 

@@ -39,14 +39,6 @@ $black19:   #191919;
 $black00:   #000000;
 
 
-%dmsans {
-  font-family: 'DMSans', sans-serif;
-}
-
-%rubik {
-  font-family: 'Rubik', sans-serif;
-}
-
 // миксин для ограничения величины текста
 @mixin clamp($clamp) {
   -webkit-line-clamp: $clamp;
