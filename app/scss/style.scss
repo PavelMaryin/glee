@@ -4,6 +4,8 @@
 @import "libs";
 @import "global";
 
+// index.html
+
 .header {
   padding: 50px 0;
 
@@ -24,11 +26,10 @@
 }
 
 .logo {
-  
-  &__img{
-  width: 146px;
-  height: 49px;
-  object-fit: contain;
+  &__img {
+    width: 146px;
+    height: 49px;
+    object-fit: contain;
   }
 }
 
@@ -39,7 +40,7 @@
     margin-right: 34px;
     font-family: "Rubik Medium", sans-serif;
     font-size: 15px;
-    line-height: 1.3;
+    line-height: inherit;
 
     &:last-child {
       margin-right: 0;
@@ -77,12 +78,12 @@
     }
   }
 
-  &__favorite,
-  &__cart {
+  &__double-btn {
     width: 89px;
     height: 50px;
     background-repeat: no-repeat;
     background-position: 50%;
+    background-color: $bluef4;
     border: none;
     padding: 0;
     transition: background-color 0.3s;
@@ -100,7 +101,7 @@
       height: 100%;
       padding: 16px;
       transition: fill 0.3s, background-color 0.3s;
-  
+
       &:active {
         background-color: $blue72;
       }
@@ -168,6 +169,7 @@
 }
 
 .top-slider {
+
   &__inner {
     background-color: $yellowb6;
     width: 100%;
@@ -187,7 +189,7 @@
     max-width: 470px;
     @include clamp(2);
   }
-  
+
   &__name {
     font-family: "Rubik Medium", sans-serif;
     text-transform: uppercase;
@@ -197,7 +199,7 @@
     margin-bottom: 24px;
     @include clamp(2);
   }
-  
+
   &__text {
     font-family: "Rubik Regular", sans-serif;
     max-width: 380px;
@@ -207,7 +209,7 @@
     font-family: "Rubik Medium", sans-serif;
     position: relative;
     font-size: 15px;
-    line-height: 0.9;
+    line-height: 1;
     padding: 20px 100px 20px 25px;
     max-width: 100px;
     background-color: $bluef4;
@@ -255,7 +257,8 @@
       border-radius: 50%;
       background: linear-gradient(270deg, $whiteff, rgba($black00, 0));
       transform: translate(19%, -70%);
-      width: 634px;
+      max-width: 634px;
+      width: 100%;
       height: 634px;
     }
   }
@@ -299,14 +302,13 @@
 }
 
 .support-box {
-  
   &__items {
     background-color: rgba($yellowb6, 0.2);
     line-height: 1.9;
     display: grid;
     grid-template-columns: 570px 1fr 1fr;
   }
-  
+
   &__item {
     position: relative;
     width: 100%;
@@ -315,7 +317,7 @@
     font-family: "DMSans Regular", sans-serif;
     font-size: 16px;
     color: $brown58;
-    
+
     p {
       @include clamp(2);
     }
@@ -334,18 +336,18 @@
       width: 51px;
       height: 53px;
     }
-  }
 
-  &__support::before {
-    background-image: url("../images/icons/icon-support.svg");
-  }
-
-  &__delivery::before {
-    background-image: url("../images/icons/icon-delivery.svg");
-  }
-
-  &__payment::before {
-    background-image: url("../images/icons/icon-payment.svg");
+    &--support::before {
+      background-image: url("../images/icons/icon-support.svg");
+    }
+  
+    &--delivery::before {
+      background-image: url("../images/icons/icon-delivery.svg");
+    }
+  
+    &--payment::before {
+      background-image: url("../images/icons/icon-payment.svg");
+    }
   }
 
   &__subtitle {
@@ -378,6 +380,79 @@
   }
 }
 
+.product-card {
+  position: relative;
+  box-shadow: 0px 6px 47px 3px rgba($black25, 0.05);
+  max-width: 270px;
+  width: 100%;
+  height: 380px;
+  border-radius: 10px;
+
+  &__box {
+    position: relative;
+    height: 245px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__img {
+    padding: 10px;
+    object-fit: contain;
+    text-align: center;
+  }
+
+  &__button-item {
+    margin-right: 16px;
+  }
+
+  &__links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 180px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    transform: translateY(300%);
+    transition: transform 0.3s;
+
+    :last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    font-weight: 500;
+    font-size: 16px;
+    color: $blue4d;
+    text-align: center;
+    padding: 0 5px;
+    @include clamp(1);
+  }
+
+  &__price {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    line-height: 2.5;
+    color: $bluec8;
+  }
+
+  &__block--hidden {
+    display: none;
+  }
+
+  &:hover {
+    .product-card__links {
+      transform: translateY(0);
+    }
+  }
+}
+
 .mix-filter {
   display: flex;
   justify-content: center;
@@ -387,8 +462,11 @@
     margin-right: 17px;
   }
 
-  &__item:last-child {
-    margin-right: 0;
+  &__item {
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   &__btn {
@@ -406,7 +484,7 @@
 }
 
 .review {
-
+  
   &__box {
     margin-bottom: 100px;
     display: flex;
@@ -416,12 +494,12 @@
   &__item {
     margin-right: 30px;
     width: 100%;
-    
+
     &:last-child {
       margin-right: 0;
     }
   }
-  
+
   &__card {
     height: 390px;
     max-width: 870px;
@@ -429,7 +507,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   &__description {
@@ -438,7 +515,7 @@
 
   &__subtitle {
     font-size: 26px;
-    line-height: 1.3;
+    line-height: inherit;
     font-weight: 700;
     margin-bottom: 33px;
     @include clamp(2);
@@ -485,7 +562,7 @@
 
   &__image {
     position: relative;
-    max-width: 350px;
+    max-width: 220px;
     margin: 20px;
     transform: translateY(-94px);
     object-fit: cover;
@@ -517,7 +594,9 @@
 
     &:focus {
       outline: none;
-      // вообще не понял, как в данном случае реализовать focus
+      // вообще не понял, как в данном случае реализовать focus.
+      // когда используешь свйоство overflow:hidden аутлайны скрываются.
+      // как вариант, использовать дополнительную обертку. Это верно?
     }
 
     &:hover {
@@ -538,7 +617,8 @@
   &__img-box {
     position: absolute;
     display: block;
-    width: 417px;
+    max-width: 417px;
+    width: 100%;
     height: 178px;
     top: 60px;
     left: 70px;
@@ -549,7 +629,8 @@
     position: relative;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-43%, -50%);
+    object-fit: contain;
   }
 
   &__box {
@@ -572,7 +653,7 @@
 
   &__subtitle {
     font-size: 20px;
-    line-height: 1.2;
+    line-height: inherit;
     font-weight: 700;
     color: $black19;
     margin-bottom: 11px;
@@ -602,35 +683,35 @@
   box-shadow: none;
   transition: box-shadow 0.3s;
 
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: $black00;
-      opacity: 0;
-      transition: opacity 0.3s;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $black00;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
 
-    &:hover::before {
-      opacity: 0.5;
-    }
+  &:hover::before {
+    opacity: 0.5;
+  }
 
-    &::after {
-      content: "";
-      position: absolute;
-      width: 75px;
-      height: 75px;
-      border-radius: 50%;
-      background-color: $whiteff;
-      opacity: 0.1;
-      transition: width 0.3s ease-in, height 0.3s ease-in, opacity 0.3s ease-in-out;
-    }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: $whiteff;
+    opacity: 0.1;
+    transition: width 0.3s ease-in, height 0.3s ease-in, opacity 0.3s ease-in-out;
+  }
 
-    &:hover::after {
-      width: 100px;
-      height: 100px;
-      opacity: 0.4;
+  &:hover::after {
+    width: 100px;
+    height: 100px;
+    opacity: 0.4;
   }
 
   & svg {
@@ -658,7 +739,7 @@
     background-color: rgba($yellowb6, 0.2);
     z-index: -1;
   }
-  
+
   &__header {
     display: flex;
     justify-content: space-between;
@@ -688,7 +769,8 @@
 .article-news {
   position: relative;
   height: 420px;
-  width: 370px;
+  max-width: 370px;
+  width: 100%;
   background-color: $whiteff;
 
   &__inner {
@@ -717,9 +799,10 @@
     &::after {
       content: "";
       position: absolute;
-      width: 315px;
+      max-width: 315px;
+      width: 100%;
       height: 1px;
-      background-color: $graye0; 
+      background-color: $graye0;
       top: 110px;
       left: 30px;
     }
@@ -734,13 +817,14 @@
     position: relative;
     font-weight: 700;
     font-size: 18px;
-    line-height: 1.3;
+    line-height: inherit;
     color: $gray26;
     @include clamp(3);
   }
 
   &__img {
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     height: 250px;
     object-fit: cover;
     background-size: cover;
@@ -800,9 +884,141 @@
 
   &__img {
     margin: auto;
-    object-fit: cover;
+    object-fit: contain;
   }
 }
+
+.footer {
+  font-weight: 700;
+  line-height: 1.6;
+
+  &__links {
+    font-family: "Rubik regular", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 60px;
+    border-bottom: 1px solid rgba($bluec8, 0.4);
+  }
+
+  &__block {
+    font-size: 14px;
+    max-width: 270px;
+    width: 100%;
+    color: $gray7b;
+  }
+
+  &__subscribe {
+    .footer__item {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__contacts {
+    max-width: 240px;
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blue64;
+    font-size: 16px;
+    line-height: inherit;
+    margin: 20px 0;
+    display: inline-block;
+  }
+
+  &__link {
+    display: inline-block;
+    color: $gray7b;
+    position: relative;
+    margin-bottom: 10px;
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .contacts {
+    &__item {
+      margin-bottom: 10px;
+    }
+
+    &__link {
+      cursor: pointer;
+      line-height: 1.7;
+      max-width: 200px;
+    }
+
+    &__link span {
+      text-transform: uppercase;
+    }
+  }
+
+  &__bottom {
+    margin: 35px 0;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  &__nav {
+    display: flex;
+  }
+
+  &__nav-link {
+    position: relative;
+  }
+
+  &__nav-item {
+    padding: 0 14px;
+    border-right: 1px solid $bluec8;
+
+    &:last-child {
+      padding-right: 0;
+      border-right: none;
+    }
+  }
+}
+
+.subscribe-form {
+  display: flex;
+
+  &__input {
+    width: 170px;
+    height: 38px;
+    background-color: rgba($yellowb6, 0.2);
+    border: none;
+    padding: 0 15px 3px;
+
+    &::placeholder {
+      font-weight: 400;
+      color: $blue69;
+      font-size: 12px;
+    }
+  }
+
+  &__form-btn {
+    display: inline;
+    width: 100px;
+    height: 38px;
+    background-color: $bluec8;
+    color: $whiteff;
+    border: none;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: $blue72;
+    }
+
+    &:active {
+      background-color: $blue4d;
+    }
+  }
+}
+
+// login.html
 
 .login {
   font-family: "Rubik Regular", sans-serif;
@@ -817,7 +1033,7 @@
   &__subtitle {
     font-weight: 300;
     font-size: 36px;
-    line-height: 1.4;
+    line-height: inherit;
   }
 
   &__box {
@@ -947,139 +1163,7 @@
   }
 }
 
-.footer {
-  font-weight: 700;
-  line-height: 1.6;
-
-  &__links {
-    font-family: "Rubik regular", sans-serif;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 60px;
-    border-bottom: 1px solid rgba($bluec8, 0.4);
-  }
-
-  &__contacts,
-  &__services,
-  &__account,
-  &__subscribe {
-    font-size: 14px;
-    max-width: 270px;
-    width: 100%;
-    color: $gray7b;
-  }
-
-  &__subscribe {
-    
-    .footer__item {
-      margin-bottom: 40px;
-    }
-  }
-
-  &__contacts {
-    max-width: 240px;
-  }
-
-  &__subtitle {
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $blue64;
-    font-size: 16px;
-    line-height: 1.3;
-    margin: 20px 0;
-    display: inline-block;
-  }
-
-  &__link {
-    display: inline-block;
-    color: $gray7b;
-    position: relative;
-    margin-bottom: 10px;
-  }
-
-  &__logo {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .contacts {
-    &__item {
-      margin-bottom: 10px;
-    }
-
-    &__link {
-      cursor: pointer;
-      line-height: 1.7;
-      max-width: 200px;
-    }
-
-    &__link span {
-      text-transform: uppercase;
-    }
-  }
-
-  &__bottom {
-    margin: 35px 0;
-    display: flex;
-    justify-content: space-between;
-    font-weight: 400;
-    font-size: 14px;
-  }
-
-  &__nav {
-    display: flex;
-  }
-
-  &__nav-link {
-    position: relative;
-  }
-
-  &__nav-item {
-    padding: 0 14px;
-    border-right: 1px solid $bluec8;
-
-    &:last-child {
-      padding-right: 0;
-      border-right: none;
-    }
-  }
-}
-
-.subscribe-form {
-  display: flex;
-
-  &__input {
-    width: 170px;
-    height: 38px;
-    background-color: rgba($yellowb6, 0.2);
-    border: none;
-    padding: 0 15px 3px;
-
-    &::placeholder {
-      font-weight: 400;
-      color: $blue69;
-      font-size: 12px;
-    }
-  }
-
-  &__form-btn {
-    display: inline;
-    width: 100px;
-    height: 38px;
-    background-color: $bluec8;
-    color: $whiteff;
-    border: none;
-    transition: background-color 0.3s;
-    
-    &:hover {
-      background-color: $blue72;
-    }
-
-    &:active {
-      background-color: $blue4d;
-    }
-  }
-}
+// shop.html
 
 .shop {
   &__subtitle {
@@ -1300,83 +1384,6 @@
   padding: 0;
 }
 
-.product-card {
-  position: relative;
-  box-shadow: 0px 6px 47px 3px rgba($black25, 0.05);
-  width: 270px;
-  height: 380px;
-  border-radius: 10px;
-
-  &__box {
-    position: relative;
-    height: 245px;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    margin-bottom: 50px;
-  }
-
-  &__img {
-    // margin: auto 0;
-    padding: 10px;
-    object-fit: contain;
-    text-align: center;
-  }
-
-  &__button-item {
-    margin-right: 16px;
-  }
-
-  &__links {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 180px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    transform: translateY(300%);
-    transition: transform 0.3s;
-
-    :last-child {
-      margin-right: 0;
-    }
-  }
-
-  &__subtitle {
-    position: relative;
-    font-weight: 500;
-    font-size: 16px;
-    color: $blue4d;
-    text-align: center;
-    padding: 0 5px;
-    @include clamp(1);
-  }
-
-  &__price {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    line-height: 2.5;
-    color: $bluec8;
-  }
-
-  &__text,
-  &__btn-cart,
-  &__stars,
-  &__btn-cart,
-  &__btn-favorite {
-    display: none;
-  }
-
-  &:hover {
-    .product-card__links {
-      transform: translateY(0);
-    }
-  }
-}
-
 .shop {
   &__contant {
     width: 100%;
@@ -1442,7 +1449,8 @@
         color: $gray33;
 
         &__box {
-          width: 370px;
+          max-width: 370px;
+          width: 100%;
           height: 100%;
           border: 2px solid $graye5;
           margin-bottom: 0;
@@ -1540,7 +1548,8 @@
 
   &__slider {
     display: flex;
-    width: 550px;
+    max-width: 550px;
+    width: 100%;
   }
 
   &__thumb-list {
@@ -1567,12 +1576,14 @@
   }
 
   &__big-list {
-    width: 387px;
+    max-width: 387px;
+    width: 100%;
   }
 
   &__big-item {
     height: 530px;
-    width: 387px;
+    max-width: 387px;
+    width: 100%;
     border: 2px solid $grayf2;
     object-fit: contain;
     overflow: hidden;
@@ -1654,10 +1665,9 @@
 
   &__tabs-btn {
     color: $blue4d;
-    transition: color 0.3s;
     font-size: 18px;
     font-weight: 500;
-    transition: background-color 0.3s;
+    transition: color 0.3s, background-color 0.3s;
 
     &:hover {
       color: $whiteff;
@@ -1941,7 +1951,8 @@
   }
 
   &__item-link {
-    width: 830px;
+    max-width: 830px;
+    width: 100%;
     height: 500px;
     display: block;
     position: relative;
@@ -2098,7 +2109,7 @@
   &__text {
     font-family: "Rubik Regular", sans-serif;
     font-size: 14px;
-    line-height: 1.4;
+    line-height: inherit;
     color: $gray33;
     margin-bottom: 6px;
     @include clamp(2);
@@ -2387,7 +2398,8 @@
 
   &__item {
     position: relative;
-    width: 370px;
+    max-width: 370px;
+    width: 100%;
     height: 380px;
     background-color: $whitefb;
     border: 2px solid $whitefb;
@@ -2472,7 +2484,8 @@
   }
 
   &__form-input {
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
   }
 
   &__form--name {

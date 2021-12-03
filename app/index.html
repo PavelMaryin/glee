@@ -17,7 +17,7 @@
 
       <nav class="header__inner">
         <a class="header__logo logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="Glee shop Logo">
+          <img class="logo__img" width="146" height="49" src="images/logo.png" alt="Glee shop Logo">
         </a>
 
         <ul class="header__menu menu">
@@ -64,7 +64,7 @@
           </button>
 
           <div class="navigation__box">
-            <button class="navigation__favorite" type="button">
+            <button class="navigation__favorite navigation__double-btn" type="button">
               <svg>
                 <use xlink:href="images/sprite.svg#favorite"></use>
               </svg>
@@ -73,7 +73,7 @@
                 0
               </span>
             </button>
-            <button class="navigation__cart" type="button">
+            <button class="navigation__cart navigation__double-btn" type="button">
               <svg>
                 <use xlink:href="images/sprite.svg#cart"></use>
               </svg>
@@ -128,33 +128,7 @@
                 </a>
               </div>
               <div class="top-slider__image">
-                <img class="top-slider__img" src="images/slider/photo1.png" alt="Double sofa">
-              </div>
-            </div>
-          </li>
-
-          <li class="top-slider__contant">
-            <div class="top-slider__item container">
-              <div class="top-slider__box">
-                <div class="top-slider__title">
-                  <h3 class="top-slider__name">
-                    Smart and trendy
-                  </h3>
-                  <div class="top-slider__text">
-                    <p>
-                      Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
-                    </p>
-                  </div>
-                </div>
-                <a class="top-slider__link" href="#">
-                  Shop Now
-                  <svg>
-                    <use xlink:href="images/sprite.svg#arrows-btn"></use>
-                  </svg>
-                </a>
-              </div>
-              <div class="top-slider__image">
-                <img class="top-slider__img" src="images/slider/photo1.png" alt="Double sofa">
+                <img class="top-slider__img" width="700" height="340" src="images/slider/photo1.png" alt="Double sofa">
               </div>
             </div>
           </li>
@@ -180,7 +154,33 @@
                 </a>
               </div>
               <div class="top-slider__image">
-                <img class="top-slider__img" src="images/slider/photo1.png" alt="Double sofa">
+                <img class="top-slider__img" width="700" height="340" src="images/slider/photo1.png" alt="Double sofa">
+              </div>
+            </div>
+          </li>
+
+          <li class="top-slider__contant">
+            <div class="top-slider__item container">
+              <div class="top-slider__box">
+                <div class="top-slider__title">
+                  <h3 class="top-slider__name">
+                    Smart and trendy
+                  </h3>
+                  <div class="top-slider__text">
+                    <p>
+                      Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                    </p>
+                  </div>
+                </div>
+                <a class="top-slider__link button" href="#">
+                  Shop Now
+                  <svg>
+                    <use xlink:href="images/sprite.svg#arrows-btn"></use>
+                  </svg>
+                </a>
+              </div>
+              <div class="top-slider__image">
+                <img class="top-slider__img" width="700" height="340" src="images/slider/photo1.png" alt="Double sofa">
               </div>
             </div>
           </li>
@@ -195,7 +195,7 @@
         </h2>
         <ul class="support-box__items">
 
-          <li class="support-box__item support-box__support">
+          <li class="support-box__item support-box__item--support">
             <span class="support-box__subtitle">
               Support 24/7.
             </span>
@@ -204,7 +204,7 @@
             </p>
           </li>
 
-          <li class="support-box__item support-box__delivery">
+          <li class="support-box__item support-box__item--delivery">
             <span class="support-box__subtitle">
               Delivery.
             </span>
@@ -213,7 +213,7 @@
             </p>
           </li>
 
-          <li class="support-box__item support-box__payment">
+          <li class="support-box__item support-box__item--payment">
             <span class="support-box__subtitle">
               100% Payment secure.
             </span>
@@ -225,8 +225,6 @@
         </ul>
       </div>
     </div>
-
-
 
     <section class="week-products">
       <div class="container">
@@ -268,7 +266,7 @@
 
             <article class="product-card">
               <div class="product-card__box">
-                <img class="product-card__img" src="images/catalogue/product1.jpg" alt="Product image">
+                <img class="product-card__img" width="270" height="245" src="images/catalogue/product1.jpg" alt="Product image">
                 <ul class="product-card__links">
 
                   <li class="product-card__button-item">
@@ -310,19 +308,19 @@
                   <span class="product-card__currency">$</span>
                   29.00
                 </span>
-                <div class="product-card__text">
+                <div class="product-card__text product-card__block--hidden">
                   <p>
                     consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation
                   </p>
                 </div>
-                <button class="product-card__btn-cart button-square" type="button">
+                <button class="product-card__btn-cart button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" type="button">
+                <button class="product-card__btn-favorite button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
@@ -336,7 +334,7 @@
 
             <article class="product-card">
               <div class="product-card__box">
-                <img class="product-card__img" src="images/catalogue/product2.jpg" alt="Product image">
+                <img class="product-card__img" width="270" height="245" src="images/catalogue/product2.jpg" alt="Product image">
                 <ul class="product-card__links">
 
                   <li class="product-card__button-item">
@@ -378,19 +376,19 @@
                   <span class="product-card__currency">$</span>
                   29.00
                 </span>
-                <div class="product-card__text">
+                <div class="product-card__text product-card__block--hidden">
                   <p>
                     consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation
                   </p>
                 </div>
-                <button class="product-card__btn-cart button-square" type="button">
+                <button class="product-card__btn-cart button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" type="button">
+                <button class="product-card__btn-favorite button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
@@ -404,7 +402,7 @@
 
             <article class="product-card">
               <div class="product-card__box">
-                <img class="product-card__img" src="images/catalogue/product3.jpg" alt="Product image">
+                <img class="product-card__img" width="270" height="245" src="images/catalogue/product3.jpg" alt="Product image">
                 <ul class="product-card__links">
 
                   <li class="product-card__button-item">
@@ -446,19 +444,19 @@
                   <span class="product-card__currency">$</span>
                   29.00
                 </span>
-                <div class="product-card__text">
+                <div class="product-card__text product-card__block--hidden">
                   <p>
                     consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation
                   </p>
                 </div>
-                <button class="product-card__btn-cart button-square" type="button">
+                <button class="product-card__btn-cart button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" type="button">
+                <button class="product-card__btn-favorite button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
@@ -472,7 +470,7 @@
 
             <article class="product-card">
               <div class="product-card__box">
-                <img class="product-card__img" src="images/catalogue/product4.jpg" alt="Product image">
+                <img class="product-card__img" width="270" height="245" src="images/catalogue/product4.jpg" alt="Product image">
                 <ul class="product-card__links">
 
                   <li class="product-card__button-item">
@@ -514,19 +512,19 @@
                   <span class="product-card__currency">$</span>
                   29.00
                 </span>
-                <div class="product-card__text">
+                <div class="product-card__text product-card__block--hidden">
                   <p>
                     consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation
                   </p>
                 </div>
-                <button class="product-card__btn-cart button-square" type="button">
+                <button class="product-card__btn-cart button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" type="button">
+                <button class="product-card__btn-favorite button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
@@ -540,7 +538,7 @@
 
             <article class="product-card">
               <div class="product-card__box">
-                <img class="product-card__img" src="images/catalogue/product5.jpg" alt="Product image">
+                <img class="product-card__img" width="270" height="245" src="images/catalogue/product5.jpg" alt="Product image">
                 <ul class="product-card__links">
 
                   <li class="product-card__button-item">
@@ -582,19 +580,19 @@
                   <span class="product-card__currency">$</span>
                   29.00
                 </span>
-                <div class="product-card__text">
+                <div class="product-card__text product-card__block--hidden">
                   <p>
                     consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation
                   </p>
                 </div>
-                <button class="product-card__btn-cart button-square" type="button">
+                <button class="product-card__btn-cart button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" type="button">
+                <button class="product-card__btn-favorite button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
@@ -608,7 +606,7 @@
 
             <article class="product-card">
               <div class="product-card__box">
-                <img class="product-card__img" src="images/catalogue/product6.jpg" alt="Product image">
+                <img class="product-card__img" width="270" height="245" src="images/catalogue/product6.jpg" alt="Product image">
                 <ul class="product-card__links">
 
                   <li class="product-card__button-item">
@@ -650,19 +648,19 @@
                   <span class="product-card__currency">$</span>
                   29.00
                 </span>
-                <div class="product-card__text">
+                <div class="product-card__text product-card__block--hidden">
                   <p>
                     consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation
                   </p>
                 </div>
-                <button class="product-card__btn-cart button-square" type="button">
+                <button class="product-card__btn-cart button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" type="button">
+                <button class="product-card__btn-favorite button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
@@ -676,7 +674,7 @@
 
             <article class="product-card">
               <div class="product-card__box">
-                <img class="product-card__img" src="images/catalogue/product7.jpg" alt="Product image">
+                <img class="product-card__img" width="270" height="245" src="images/catalogue/product7.jpg" alt="Product image">
                 <ul class="product-card__links">
 
                   <li class="product-card__button-item">
@@ -718,19 +716,19 @@
                   <span class="product-card__currency">$</span>
                   29.00
                 </span>
-                <div class="product-card__text">
+                <div class="product-card__text product-card__block--hidden">
                   <p>
                     consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation
                   </p>
                 </div>
-                <button class="product-card__btn-cart button-square" type="button">
+                <button class="product-card__btn-cart button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" type="button">
+                <button class="product-card__btn-favorite button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
@@ -744,7 +742,7 @@
 
             <article class="product-card">
               <div class="product-card__box">
-                <img class="product-card__img" src="images/catalogue/product8.jpg" alt="Product image">
+                <img class="product-card__img" width="270" height="245" src="images/catalogue/product8.jpg" alt="Product image">
                 <ul class="product-card__links">
 
                   <li class="product-card__button-item">
@@ -786,19 +784,19 @@
                   <span class="product-card__currency">$</span>
                   29.00
                 </span>
-                <div class="product-card__text">
+                <div class="product-card__text product-card__block--hidden">
                   <p>
                     consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ut enim ad minim veniam, quis nostrud exercitation
                   </p>
                 </div>
-                <button class="product-card__btn-cart button-square" type="button">
+                <button class="product-card__btn-cart button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#icon-prod-cart"></use>
                   </svg>
                   <span class="sr-only">Add to cart</span>
                 </button>
-                <button class="product-card__btn-favorite button-square" type="button">
+                <button class="product-card__btn-favorite button-square product-card__block--hidden" type="button">
                   <svg>
                     <use xlink:href="images/sprite.svg#favorite"></use>
                   </svg>
@@ -818,7 +816,7 @@
 
         <li class="review__item">
           <article class="review__card">
-            <img class="review__image" src="images/catalogue/review-prod1.png" alt="Table LED Lamp">
+            <img class="review__image" width="220" height="400" src="images/catalogue/review-prod1.png" alt="Table LED Lamp">
             <div class="review__description">
               <span class="review__subtitle">
                 Mirum Notare Tellus
@@ -840,7 +838,7 @@
 
         <li class="review__item">
           <article class="review__card">
-            <img class="review__image" src="images/catalogue/review-prod2.png" alt="Table LED Lamp">
+            <img class="review__image" width="220" height="400" src="images/catalogue/review-prod2.png" alt="Table LED Lamp">
             <div class="review__description">
               <span class="review__subtitle">
                 Malesuada Tempor Euismod
@@ -910,7 +908,7 @@
                   </p>
                 </div>
                 <div class="new-design__img-box">
-                  <img class="new-design__img" src="images/catalogue/new-design1.png" alt="Classic cofa">
+                  <img class="new-design__img" width="380" height="178" src="images/catalogue/new-design1.png" alt="Classic cofa">
                   </img>
                 </div>
               </div>
@@ -929,7 +927,7 @@
                   </p>
                 </div>
                 <div class="new-design__img-box">
-                  <img class="new-design__img" src="images/catalogue/new-design2.png" alt="Modern style double bed">
+                  <img class="new-design__img" width="380" height="178" src="images/catalogue/new-design2.png" alt="Modern style double bed">
                   </img>
                 </div>
               </div>
@@ -948,7 +946,7 @@
                   </p>
                 </div>
                 <div class="new-design__img-box">
-                  <img class="new-design__img" src="images/catalogue/new-design3.png" alt="Black office armcheir">
+                  <img class="new-design__img" width="380" height="178" src="images/catalogue/new-design3.png" alt="Black office armcheir">
                   </img>
                 </div>
               </div>
@@ -967,7 +965,7 @@
                   </p>
                 </div>
                 <div class="new-design__img-box">
-                  <img class="new-design__img" src="images/catalogue/new-design4.png" alt="Classic style bouble bed">
+                  <img class="new-design__img" width="380" height="178" src="images/catalogue/new-design4.png" alt="Classic style bouble bed">
                   </img>
                 </div>
               </div>
@@ -986,7 +984,7 @@
                   </p>
                 </div>
                 <div class="new-design__img-box">
-                  <img class="new-design__img" src="images/catalogue/new-design5.png" alt="White office armchair">
+                  <img class="new-design__img" width="380" height="178" src="images/catalogue/new-design5.png" alt="White office armchair">
                   </img>
                 </div>
               </div>
@@ -1005,7 +1003,7 @@
                   </p>
                 </div>
                 <div class="new-design__img-box">
-                  <img class="new-design__img" src="images/catalogue/new-design6.png" alt="Modern sofa for 3 person">
+                  <img class="new-design__img" width="380" height="178" src="images/catalogue/new-design6.png" alt="Modern sofa for 3 person">
                   </img>
                 </div>
               </div>
@@ -1016,7 +1014,7 @@
       </div>
     </section>
 
-    <a class="video" data-fancybox href="https://www.youtube.com/watch?v=u3kz73Pe7q8&ab_channel=MaloneMediaGroup"
+    <a class="video" height="500" data-fancybox href="https://www.youtube.com/watch?v=u3kz73Pe7q8&ab_channel=MaloneMediaGroup"
       style="background-image: url('images/catalogue/video-cover.jpg')">
       <svg>
         <use xlink:href="images/sprite.svg#video-play-icon"></use>
@@ -1043,7 +1041,7 @@
           <li class="articles__item article-news">
             <article class="article-news__inner">
               <a class="article-news__link-img" href="#">
-                <img class="article-news__img" src="images/catalogue/article1.jpg" alt="Sleeping room">
+                <img class="article-news__img" width="370" height="250" src="images/catalogue/article1.jpg" alt="Sleeping room">
                 <a class="article-news__link" href="#">
                   News
                 </a>
@@ -1074,7 +1072,7 @@
           <li class="articles__item article-news">
             <article class="article-news__inner">
               <a class="article-news__link-img" href="#">
-                <img class="article-news__img" src="images/catalogue/article2.jpg" alt="Sleeping room">
+                <img class="article-news__img" width="370" height="250" src="images/catalogue/article2.jpg" alt="Sleeping room">
                 <a class="article-news__link" href="#">
                   News
                 </a>
@@ -1105,7 +1103,7 @@
           <li class="articles__item article-news">
             <article class="article-news__inner">
               <a class="article-news__link-img" href="#">
-                <img class="article-news__img" src="images/catalogue/article3.jpg" alt="Sleeping room">
+                <img class="article-news__img" width="370" height="250" src="images/catalogue/article3.jpg" alt="Sleeping room">
                 <a class="article-news__link" href="#">
                   News
                 </a>
@@ -1142,32 +1140,32 @@
         <ul class="partners__slider">
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <img class="partners__img" src="images/Partners/peterson.png" alt="Peterrson Company Logo">
+              <img class="partners__img" width="151" height="84" src="images/Partners/peterson.png" alt="Peterrson Company Logo">
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <img class="partners__img" src="images/Partners/kmn-consulting.png" alt="CMN Consulting Company Logo">
+              <img class="partners__img" width="151" height="84" src="images/Partners/kmn-consulting.png" alt="CMN Consulting Company Logo">
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <img class="partners__img" src="images/Partners/chainforce.png" alt="Chainforce Company Logo">
+              <img class="partners__img" width="151" height="84" src="images/Partners/chainforce.png" alt="Chainforce Company Logo">
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <img class="partners__img" src="images/Partners/nextg3n.png" alt="Nest3N Company Logo">
+              <img class="partners__img" width="151" height="84" src="images/Partners/nextg3n.png" alt="Nest3N Company Logo">
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <img class="partners__img" src="images/Partners/vintage.png" alt="Vintage Company Logo">
+              <img class="partners__img" width="151" height="84" src="images/Partners/vintage.png" alt="Vintage Company Logo">
             </a>
           </li>
           <li class="partners__item">
             <a class="partners__link" href="#">
-              <img class="partners__img" src="images/Partners/chainforce.png" alt="Chainforce Company Logo">
+              <img class="partners__img" width="151" height="84" src="images/Partners/chainforce.png" alt="Chainforce Company Logo">
             </a>
           </li>
         </ul>
@@ -1179,11 +1177,11 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__links">
-        <div class="footer__contacts">
+        <div class="footer__contacts footer__block">
           <a class="footer__logo logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="Glee shop Logo">
+            <img class="logo__img" width="146" height="49" src="images/logo.png" alt="Glee shop Logo">
           </a>
-          <address class="footer__contacts">
+          <address class="footer__contacts footer__block">
             <ul class="contacts__list">
               <li class="contacts__item">
                 <a class="contacts__link">
@@ -1207,7 +1205,7 @@
           </address>
         </div>
 
-        <div class="footer__services">
+        <div class="footer__services footer__block">
           <span class="footer__subtitle">
             Services
           </span>
@@ -1240,7 +1238,7 @@
           </ul>
         </div>
 
-        <div class="footer__account">
+        <div class="footer__account footer__block">
           <span class="footer__subtitle">
             Account
           </span>
@@ -1268,7 +1266,7 @@
           </ul>
         </div>
 
-        <div class="footer__subscribe">
+        <div class="footer__subscribe footer__block">
           <span class="footer__subtitle">
             newsletter
           </span>
