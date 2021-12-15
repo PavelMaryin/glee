@@ -484,7 +484,7 @@
 }
 
 .review {
-  
+
   &__box {
     margin-bottom: 100px;
     display: flex;
@@ -593,7 +593,7 @@
     position: relative;
 
     &:focus {
-      outline: none;
+      outline: 2px solid $blue69;
       // вообще не понял, как в данном случае реализовать focus.
       // когда используешь свйоство overflow:hidden аутлайны скрываются.
       // как вариант, использовать дополнительную обертку. Это верно?

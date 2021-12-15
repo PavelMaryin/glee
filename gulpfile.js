@@ -8,7 +8,7 @@ const imagemin      = require('gulp-imagemin');
 const svgSprite     = require('gulp-svg-sprite');
 const fileInclude   = require('gulp-file-include');
 const del           = require('del');
-const browserSync   = require('browser-sync').create();
+const browserSync   = require('browser-sync').create();             // .create() - это создания нового подключения
 
 function browsersync() {
   browserSync.init({
@@ -19,6 +19,13 @@ function browsersync() {
   })
 }
 
+// function html() {
+//   return src('app/**/*.html')
+//     .pipe(fileinclude())
+//     .pipe(dest('app/dist/'))
+//     .pipe(browserSync.stream())
+// }
+
 function styles() {
   return src('app/scss/style.scss')
   .pipe(scss({outputStyle: 'compressed'}))
@@ -27,8 +34,8 @@ function styles() {
     overrideBrowserslist: ['last 10 versions'],
     grid: true
   }))
-  .pipe(dest('app/css'))
-  .pipe(browserSync.stream())
+  .pipe(dest('app/dist/css/'))
+  .pipe(browserSync.stream())                       // забросить выгруженный фаил в браузер
 }
 
 function scripts() {
@@ -44,12 +51,12 @@ function scripts() {
   ])
   .pipe(concat('main.min.js'))
   .pipe(uglify())
-  .pipe(dest('app/js'))
+  .pipe(dest('app/dist/js/'))
   .pipe(browserSync.stream())
 }
 
 function images(){
-  return src('app/images/**/*.*')
+  return src(['app/images/**/*.*', '!app/images/icons/*.*', '!app/images/sprite.svg'])
   .pipe(imagemin([
     imagemin.gifsicle({interlaced: true}),
     imagemin.mozjpeg({quality: 75, progressive: true}),
@@ -61,10 +68,10 @@ function images(){
         ]
     })
   ]))
-  .pipe(dest('dist/images'))
+  .pipe(dest('app/dist/images/'))
 }
 
-function svgSprites(){
+function svgsprites(){
   return src('app/images/icons/**.svg')
   .pipe(svgSprite({
     mode: {
@@ -73,7 +80,7 @@ function svgSprites(){
       }
     }
   }))
-  .pipe(dest('app/images'))
+  .pipe(dest('app/dist/images/'))
 }
 
 function fileinclude(){
@@ -84,38 +91,40 @@ function fileinclude(){
     prefix: '@@',
     basepath: '@file'
   }))
-  .pipe(dest('dist'))
+  .pipe(dest('app/dist/'))
 }
 
 function build() {
   return src([
-    'app/**/*.html',
+    'app/*.html',
     'app/css/style.min.css',
     'app/js/main.min.js'
   ], {base: 'app'})
-  .pipe(dest('dist'))
+  .pipe(dest('app/dist/'))
 }
 
 function cleanDist() {
-  return del('dist')
+  return del('app/dist')
 }
 
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
-  watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
-  watch(['app/**/*.html'], fileinclude).on('change', browserSync.reload);
-  // watch(['app/**/*.svg'], svgSprites);
-
+  watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);                  //следим за изменениями всех файлов js, за исключением min.js
+  watch(['app/*.html'], fileinclude).on('change', browserSync.reload);        // при изменениях в html сделать полный релоад страницы
+  watch(['app/**/*.svg' , '!app/**/sprite.cvg'], svgSprite);
+  watch(['app/**/*.{jpg,gif,png}' , '!app/dist/**/*.{jpg,svg,gif,png}'], images);
 }
 
+// экспорт функций в gulp. значения после знака равно - это имеющаяся функция
 exports.styles = styles;
 exports.scripts = scripts;
 exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
-exports.svgSprites = svgSprites;
+exports.svgsprites = svgsprites;
 exports.fileinclude = fileinclude;
 exports.cleanDist = cleanDist;
-exports.build = series(cleanDist, images, build);
 
-exports.default = parallel(styles, fileinclude,  scripts, browsersync, watching);
+exports.build = series(cleanDist, build);
+
+exports.default = parallel(styles, scripts, browsersync, watching, svgsprites, images);
