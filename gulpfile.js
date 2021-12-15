@@ -13,18 +13,11 @@ const browserSync   = require('browser-sync').create();             // .create()
 function browsersync() {
   browserSync.init({
     server: {
-      baseDir: 'app/'
+      baseDir: 'app/dist/'
     },
     notify: false
   })
 }
-
-// function html() {
-//   return src('app/**/*.html')
-//     .pipe(fileinclude())
-//     .pipe(dest('app/dist/'))
-//     .pipe(browserSync.stream())
-// }
 
 function styles() {
   return src('app/scss/style.scss')
@@ -84,23 +77,18 @@ function svgsprites(){
 }
 
 function fileinclude(){
-  return src([
-    'app/module/**/*.html'
-  ])
+  return src('app/*.html')
   .pipe(fileInclude({
     prefix: '@@',
     basepath: '@file'
   }))
-  .pipe(dest('app/dist/'))
+  .pipe(dest('app/dist'))
 }
 
 function build() {
   return src([
-    'app/*.html',
-    'app/css/style.min.css',
-    'app/js/main.min.js'
-  ], {base: 'app'})
-  .pipe(dest('app/dist/'))
+    'app/js/main.min.js'], {base: 'app/dist'})
+  .pipe(dest('app/dist'))
 }
 
 function cleanDist() {
@@ -110,9 +98,9 @@ function cleanDist() {
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);                  //следим за изменениями всех файлов js, за исключением min.js
-  watch(['app/*.html'], fileinclude).on('change', browserSync.reload);        // при изменениях в html сделать полный релоад страницы
-  watch(['app/**/*.svg' , '!app/**/sprite.cvg'], svgSprite);
-  watch(['app/**/*.{jpg,gif,png}' , '!app/dist/**/*.{jpg,svg,gif,png}'], images);
+  watch(['app/*.html', 'app/module/**/*.html'], fileinclude).on('change', browserSync.reload);        // при изменениях в html сделать полный релоад страницы
+  watch(['app/images/icons/*.*'], svgSprite);
+  watch(['app/images/**/*.{jpg,gif,png}'], images);
 }
 
 // экспорт функций в gulp. значения после знака равно - это имеющаяся функция
@@ -122,9 +110,10 @@ exports.browsersync = browsersync;
 exports.watching = watching;
 exports.images = images;
 exports.svgsprites = svgsprites;
-exports.fileinclude = fileinclude;
 exports.cleanDist = cleanDist;
+exports.build = build;
 
-exports.build = series(cleanDist, build);
 
-exports.default = parallel(styles, scripts, browsersync, watching, svgsprites, images);
+exports.build = series(cleanDist, parallel(fileinclude, build, styles, scripts));
+
+exports.default = parallel(build, fileinclude, styles, scripts, browsersync, watching, svgsprites, images);

@@ -338,15 +338,15 @@
     }
 
     &--support::before {
-      background-image: url("../images/icons/icon-support.svg");
+      background-image: url("../images/sprite.svg#icon-support");
     }
   
     &--delivery::before {
-      background-image: url("../images/icons/icon-delivery.svg");
+      background-image: url("../images/sprite.svg#icon-delivery");
     }
   
     &--payment::before {
-      background-image: url("../images/icons/icon-payment.svg");
+      background-image: url("../images/sprite.svg#icon-payment");
     }
   }
 
@@ -594,9 +594,6 @@
 
     &:focus {
       outline: 2px solid $blue69;
-      // вообще не понял, как в данном случае реализовать focus.
-      // когда используешь свйоство overflow:hidden аутлайны скрываются.
-      // как вариант, использовать дополнительную обертку. Это верно?
     }
 
     &:hover {
