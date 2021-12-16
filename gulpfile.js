@@ -9,6 +9,8 @@ const svgSprite     = require('gulp-svg-sprite');
 const fileInclude   = require('gulp-file-include');
 const del           = require('del');
 const browserSync   = require('browser-sync').create();             // .create() - это создания нового подключения
+const ttf2woff      = require('gulp-ttf2woff');
+const ttf2woff2     = require('gulp-ttf2woff2');
 
 function browsersync() {
   browserSync.init({
@@ -17,6 +19,15 @@ function browsersync() {
     },
     notify: false
   })
+}
+
+function fonts() {
+  src('app/fonts/*.ttf')
+    .pipe(ttf2woff())
+    .pipe(dest('app/dist/fonts/'));
+  return src('app/fonts/*.ttf')
+    .pipe(ttf2woff2())
+    .pipe(dest('app/dist/fonts/'));
 }
 
 function styles() {
@@ -65,7 +76,7 @@ function images(){
 }
 
 function svgsprites(){
-  return src('app/images/icons/**.svg')
+  return src('app/images/icons/*.svg')
   .pipe(svgSprite({
     mode: {
       stack: {
@@ -77,7 +88,7 @@ function svgsprites(){
 }
 
 function fileinclude(){
-  return src('app/*.html')
+  return src(['app/*.html', 'app/**/*.html', '!app/dist/*.html'])
   .pipe(fileInclude({
     prefix: '@@',
     basepath: '@file'
@@ -98,22 +109,24 @@ function cleanDist() {
 function watching() {
   watch(['app/scss/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);                  //следим за изменениями всех файлов js, за исключением min.js
-  watch(['app/*.html', 'app/module/**/*.html'], fileinclude).on('change', browserSync.reload);        // при изменениях в html сделать полный релоад страницы
+  watch(['app/*.html', 'app/module/**/*.html', '!app/dist/*.html'], fileinclude).on('change', browserSync.reload);        // при изменениях в html сделать полный релоад страницы
   watch(['app/images/icons/*.*'], svgSprite);
   watch(['app/images/**/*.{jpg,gif,png}'], images);
+  watch(['app/fonts/*.ttf'], fonts);
 }
 
 // экспорт функций в gulp. значения после знака равно - это имеющаяся функция
-exports.styles = styles;
-exports.scripts = scripts;
+exports.styles      = styles;
+exports.scripts     = scripts;
 exports.browsersync = browsersync;
-exports.watching = watching;
-exports.images = images;
-exports.svgsprites = svgsprites;
-exports.cleanDist = cleanDist;
-exports.build = build;
+exports.watching    = watching;
+exports.images      = images;
+exports.svgsprites  = svgsprites;
+exports.cleanDist   = cleanDist;
+exports.build       = build;
+exports.fonts       = fonts;
 
 
-exports.build = series(cleanDist, parallel(fileinclude, build, styles, scripts));
+exports.build = series(cleanDist, parallel(fileinclude, build, styles, scripts, fonts));
 
-exports.default = parallel(build, fileinclude, styles, scripts, browsersync, watching, svgsprites, images);
+exports.default = parallel(build, fileinclude, styles, scripts, browsersync, watching, svgsprites, images, fonts);
