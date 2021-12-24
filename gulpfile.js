@@ -11,6 +11,7 @@ const del           = require('del');
 const browserSync   = require('browser-sync').create();             // .create() - это создания нового подключения
 const ttf2woff      = require('gulp-ttf2woff');
 const ttf2woff2     = require('gulp-ttf2woff2');
+const groupmedia    = require('gulp-group-css-media-queries');
 
 function browsersync() {
   browserSync.init({
@@ -33,6 +34,7 @@ function fonts() {
 function styles() {
   return src('app/scss/style.scss')
   .pipe(scss({outputStyle: 'compressed'}))
+  .pipe(groupmedia())
   .pipe(concat('style.min.css'))
   .pipe(autoprefixer({
     overrideBrowserslist: ['last 10 versions'],
@@ -88,7 +90,7 @@ function svgsprites(){
 }
 
 function fileinclude(){
-  return src(['app/*.html', 'app/**/*.html', '!app/dist/*.html'])
+  return src(['app/*.html', 'app/**/*.html', '!app/dist/*.html', '!app/module/**/*.html'])
   .pipe(fileInclude({
     prefix: '@@',
     basepath: '@file'
