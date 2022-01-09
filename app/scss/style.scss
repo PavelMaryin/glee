@@ -10,21 +10,21 @@
 
 @import "../module/_sliders/first_page_slider";
 
-
-
 .support-box {
   &__items {
     background-color: rgba($yellowb6, 0.2);
     line-height: 1.9;
     display: grid;
-    grid-template-columns: 570px 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 170px;
+    align-items: center;
+    justify-items: center;
   }
 
   &__item {
     position: relative;
-    width: 100%;
-    padding: 35px 20px 40px 200px;
-    margin: 0 auto;
+    width: 220px;
+    padding-right: 20px;
     font-family: "DMSans Regular", sans-serif;
     font-size: 16px;
     color: $brown58;
@@ -33,17 +33,12 @@
       @include clamp(2);
     }
 
-    &:nth-child(2) {
-      border-left: 1px solid rgba($blue4d, 0.1);
-      border-right: 1px solid rgba($blue4d, 0.1);
-    }
-
     &::before {
       background-repeat: no-repeat;
       content: "";
       position: absolute;
-      top: 47px;
-      left: 120px;
+      top: 0px;
+      left: -80px;
       width: 51px;
       height: 53px;
     }
@@ -51,11 +46,11 @@
     &--support::before {
       background-image: url("../images/sprite.svg#icon-support");
     }
-  
+
     &--delivery::before {
       background-image: url("../images/sprite.svg#icon-delivery");
     }
-  
+
     &--payment::before {
       background-image: url("../images/sprite.svg#icon-payment");
     }
@@ -67,6 +62,52 @@
     font-size: 18px;
     color: $gray41;
     @include clamp(1);
+  }
+}
+
+@media (max-width: $lx) {
+  .support-box {
+    &__items {
+      justify-items: end;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .support-box {
+    &__items {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 170px);
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .support-box {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(3, 170px);
+      justify-items: center;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .support-box {
+    &__items {
+      justify-items: end;
+    }
+
+    &__item {
+      
+      &::before {
+        left: -55px;
+      }
+    }
   }
 }
 
@@ -174,7 +215,6 @@
   }
 
   &__item {
-
     &:last-child {
       margin-right: 0;
     }
@@ -195,7 +235,6 @@
 }
 
 .review {
-
   &__box {
     margin-bottom: 100px;
     display: flex;
