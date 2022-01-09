@@ -91,6 +91,16 @@ $(function () {
     autoplay: true,
   });
 
+  $('.menu-btn').on('click', function(){
+    $('.menu-btn').toggleClass('menu-btn--active');
+    $('.header__menu').toggleClass('header__menu--active');
+  });
+
+  $('.menu__link').on('click', function(){
+    $('.menu-btn').removeClass('menu-btn--active');
+    $('.header__menu').removeClass('header__menu--active');
+  })
+
 
 
   let container1 = document.querySelector('.week-products');

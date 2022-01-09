@@ -109,7 +109,7 @@ function cleanDist() {
 }
 
 function watching() {
-  watch(['app/scss/**/*.scss'], styles);
+  watch(['app/scss/**/*.scss', 'app/module/**/*.scss'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);                  //следим за изменениями всех файлов js, за исключением min.js
   watch(['app/*.html', 'app/module/**/*.html', '!app/dist/*.html'], fileinclude).on('change', browserSync.reload);        // при изменениях в html сделать полный релоад страницы
   watch(['app/images/icons/*.*'], svgSprite);
