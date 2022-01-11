@@ -14,31 +14,40 @@
   &__items {
     background-color: rgba($yellowb6, 0.2);
     line-height: 1.9;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 170px;
-    align-items: center;
-    justify-items: center;
+    display: flex;
+    justify-content: space-around;
   }
 
   &__item {
     position: relative;
-    width: 220px;
-    padding-right: 20px;
+    max-width: 600px;
+    width: 100%;
+    padding: 46px 0 46px 150px;
     font-family: "DMSans Regular", sans-serif;
     font-size: 16px;
     color: $brown58;
 
+    span {
+      width: 220px;
+    }
+    
     p {
       @include clamp(2);
+      width: 220px;
+    }
+
+    &:nth-child(2) {
+      border-left: 1px solid rgba($blue72, 0.1);
+      border-right: 1px solid rgba($blue72, 0.1);
+
     }
 
     &::before {
       background-repeat: no-repeat;
       content: "";
       position: absolute;
-      top: 0px;
-      left: -80px;
+      top: 46px;
+      left: 80px;
       width: 51px;
       height: 53px;
     }
@@ -66,49 +75,19 @@
 }
 
 @media (max-width: $lx) {
-  .support-box {
-    &__items {
-      justify-items: end;
-    }
-  }
+
 }
 
 @media (max-width: $lg) {
-  .support-box {
-    &__items {
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 170px);
-    }
-  }
+
 }
 
 @media (max-width: $md) {
-  .support-box {
-    &__items {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(3, 170px);
-      justify-items: center;
-    }
 
-    &__subtitle {
-      font-size: 16px;
-    }
-  }
 }
 
 @media (max-width: $xs) {
-  .support-box {
-    &__items {
-      justify-items: end;
-    }
 
-    &__item {
-      
-      &::before {
-        left: -55px;
-      }
-    }
-  }
 }
 
 .week-products {
