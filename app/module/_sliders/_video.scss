@@ -1,0 +1,59 @@
+.video {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+  background-color: $black00;
+  box-shadow: none;
+  transition: box-shadow 0.3s;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $black00;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 0.5;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background-color: $whiteff;
+    opacity: 0.1;
+    transition: width 0.3s ease-in, height 0.3s ease-in, opacity 0.3s ease-in-out;
+  }
+
+  &:hover::after {
+    width: 100px;
+    height: 100px;
+    opacity: 0.4;
+  }
+
+  & svg {
+    position: relative;
+    width: 22px;
+    height: 25px;
+    fill: $whiteff;
+    transform: translateX(10%);
+  }
+
+  &:active {
+    box-shadow: 0 0 20px $yellowb6;
+  }
+}

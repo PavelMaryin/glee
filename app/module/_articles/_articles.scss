@@ -1,0 +1,38 @@
+.articles {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 331px;
+    height: 170px;
+    width: 100%;
+    background-color: rgba($yellowb6, 0.2);
+    z-index: -1;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 45px;
+  }
+
+  &__view-all {
+    position: relative;
+    font-weight: 700;
+    color: $gray26;
+
+    svg {
+      width: 6px;
+      height: 10px;
+      margin-left: 15px;
+      fill: $gray26;
+    }
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+}

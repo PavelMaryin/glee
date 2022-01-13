@@ -1,0 +1,115 @@
+.new-design {
+  margin-bottom: 120px;
+
+  &__title {
+    margin-bottom: 28px;
+  }
+
+  &__filter {
+    margin-bottom: 80px;
+  }
+
+  &__item {
+    max-width: 370px;
+    width: 100%;
+    height: 246px;
+    border-radius: 5px 5px 0 0;
+    box-shadow: none;
+    background-color: $grayf8;
+    transition: box-shadow 0.5s;
+    position: relative;
+
+    &:focus {
+      outline: 2px solid $blue69;
+    }
+
+    &:hover {
+      box-shadow: 0 0 20px $blue4d;
+    }
+
+    &:active {
+      box-shadow: 0 0 20px $yellowb6;
+    }
+  }
+
+  &__inner {
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+  }
+
+  &__img-box {
+    position: absolute;
+    display: block;
+    max-width: 417px;
+    width: 100%;
+    height: 178px;
+    top: 60px;
+    left: 70px;
+    overflow: hidden;
+  }
+
+  &__img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-43%, -50%);
+    object-fit: contain;
+  }
+
+  &__box {
+    background-size: cover;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 370px);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 34px;
+    grid-column-gap: 30px;
+    justify-content: center;
+  }
+
+  &__content {
+    padding: 34px 140px 0 34px;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    line-height: inherit;
+    font-weight: 700;
+    color: $black19;
+    margin-bottom: 11px;
+    @include clamp(2);
+  }
+
+  &__text {
+    font-weight: 700;
+    color: $bluec8;
+    @include clamp(1);
+  }
+}
+
+@media (max-width: $lx) {
+  .new-design {
+
+    &__cards {
+      grid-template-columns: repeat(2, 370px);
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .new-design {
+
+    &__filter {
+      margin-bottom: 20px;
+    }
+
+    &__cards {
+      grid-template-columns: repeat(1, 370px);
+    }
+  }
+}

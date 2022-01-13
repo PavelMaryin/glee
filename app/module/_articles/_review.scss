@@ -1,0 +1,137 @@
+.review {
+  &__box {
+    margin-bottom: 100px;
+    display: flex;
+    color: $blue4d;
+  }
+
+  &__item {
+    margin-right: 30px;
+    width: 100%;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__card {
+    height: 390px;
+    max-width: 870px;
+    background-color: rgba($yellowb6, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__description {
+    max-width: 340px;
+    padding-right: 10px;
+  }
+
+  &__subtitle {
+    font-size: 26px;
+    line-height: inherit;
+    font-weight: 700;
+    margin-bottom: 33px;
+    @include clamp(2);
+  }
+
+  &__text {
+    font-family: "Rubik Regular", sans-serif;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    @include clamp(2);
+  }
+
+  &__link {
+    font-family: "Rubik Regular", sans-serif;
+    font-size: 15px;
+    color: $blue72;
+    padding: 20px;
+    border: 1px solid rgba($bluec8, 0.4);
+    border-radius: 5px;
+    transition: color 0.3s, background-color 0.3s;
+
+    svg {
+      margin-left: 45px;
+      width: 22px;
+      height: 9px;
+
+      use {
+        fill: $blue72;
+        transition: fill 0.3s;
+      }
+    }
+
+    &:hover,
+    &:hover use {
+      color: $whiteff;
+      fill: $whiteff;
+      background-color: $bluec8;
+    }
+
+    &:active {
+      background-color: $blue72;
+    }
+  }
+
+  &__image {
+    position: relative;
+    max-width: 220px;
+    margin: 20px;
+    transform: translateY(-94px);
+    object-fit: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: $lx) {
+  .review {
+    &__box {
+      flex-wrap: wrap;
+    }
+
+    &__card {
+      margin: 0 auto;
+
+    }
+    
+    &__item {
+      margin-right: 0;
+      margin-bottom: 120px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: $sm) {
+  .review {
+
+    &__item {
+      margin-bottom: 80px;
+    }
+
+    &__image {
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: $xs) {
+  .review {
+
+    &__card {
+      padding: 0 10px;
+      flex-wrap: wrap;
+      height: 500px;
+    }
+
+    &__description {
+      transform: translateY(-91px);
+    }
+  }
+}

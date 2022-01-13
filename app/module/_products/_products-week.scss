@@ -275,3 +275,21 @@
     }
   }
 }
+
+@media (max-width: $xs) {
+
+  .week-products {
+
+    &__filter {
+      margin-bottom: 20px;
+    }
+  }
+
+  .mix-filter {
+
+
+    &__btn {
+      padding: 10px;
+    }
+  }
+}
