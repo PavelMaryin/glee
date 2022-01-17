@@ -113,3 +113,16 @@
     }
   }
 }
+
+@media (max-width: $xs) {
+  .new-design {
+
+    &__cards {
+      grid-template-columns: repeat(1, 310px);
+    }
+
+    // &__item {
+    //   width: 320px;
+    // }
+  }
+}
