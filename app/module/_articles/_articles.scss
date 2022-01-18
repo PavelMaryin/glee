@@ -172,16 +172,32 @@
 @media (max-width: $sm) {
   .articles {
 
+    &::after {
+      top: 404px;
+    }
+
     &__header {
       flex-wrap: wrap;
+      flex-direction: column;
     }
 
     &__title {
+      width: 220px;
       margin-bottom: 15px;
     }
 
     &__view-all {
       margin-left: auto;
+    }
+  }
+
+  .article-news {
+
+    &__box {
+      &::after {
+        left: 0;
+        max-width: 100%;
+      }
     }
   }
 }

@@ -1,0 +1,17 @@
+
+
+.partners {
+  width: 100%;
+  padding: 90px 0 70px;
+  background-color: rgba($yellowb6, 0.2);
+  margin-bottom: 65px;
+
+  &__item {
+    height: 80px;
+  }
+
+  &__img {
+    margin: auto;
+    object-fit: contain;
+  }
+}

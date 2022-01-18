@@ -89,6 +89,33 @@ $(function () {
     slidesToShow: 5,
     slidesToScroll: 1,
     autoplay: true,
+    mobileFirst: false,
+    responsive: [
+      {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 4,
+      }
+    },
+     { 
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 3,
+      }
+    },
+     { 
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+     { 
+      breakpoint: 512,
+      settings: {
+        slidesToShow: 1,
+      }
+    }
+    ]
   });
 
   $('.menu-btn').on('click', function(){
