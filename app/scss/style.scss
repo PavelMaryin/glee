@@ -6,6 +6,16 @@
 
 // index.html
 
+.main {
+  padding-top: 150px;
+}
+
+@media (max-width: $lg) {
+  .main {
+    padding-top: 70px;
+  }
+};
+
 @import "../module/_header/header";
 
 @import "../module/_sliders/first_page_slider";

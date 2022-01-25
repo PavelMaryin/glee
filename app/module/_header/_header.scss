@@ -1,6 +1,16 @@
 .header {
+  position: fixed;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 20;
+  top: 0;
   padding: 50px 0;
-
+  transition: padding 0.3s;
+  
+  &--sticky {
+    padding: 10px 0;
+  }
+  
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -179,35 +189,45 @@
 
 @media (max-width: $lg) {
   .header {
-
     padding: 10px 0;
+    transform: translateY(0);
+    transition: transform 0.3s;
 
     &__menu {
       position: absolute;
-      left: 0;
       right: 0;
       top: 0;
       flex-direction: column;
       background-color: $bluec8;
-      width: 100%;
+      width: 250px;
       z-index: 10;
-      transform: translateY(-300%);
+      transform: translateX(300%);
 
 
       &--active {
+        position: fixed;
         transform: translateY(0);
       }
+
+    }
+    
+    &--sticky {
+      transform: translateY(-150px);
     }
 
     .menu-btn {
       z-index: 11;
 
       &--active {
-        position: absolute;
+        position: fixed;
         top: 10px;
         right: 15px;
         background-color: $blue72;
       }
+
+      // &--sticky {
+      //   position: fixed;
+      // }
     }
   }
   
@@ -217,7 +237,7 @@
       display: block;
       width: 100%;
       text-align: center;
-      padding: 15px 0;
+      padding: 20px 0;
 
       &:active::before {
         transform: rotate(0);

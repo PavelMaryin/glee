@@ -127,3 +127,24 @@
     }
   }
 }
+
+@media (max-width: $lg) {
+  .footer {
+    &__links {
+      flex-wrap: wrap;
+    }
+  }
+}
+
+@media (max-width: $md) {
+  .footer {
+    &__bottom {
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    &__copyrights {
+      margin-bottom: 15px;
+    }
+  }
+}

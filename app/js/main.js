@@ -142,4 +142,23 @@ $(function () {
   let mixer = mixitup(container1, config);
   let mixer1 = mixitup(container2, config);
 
+  // $(window).scroll(function () {
+  //   if (this.scrollY > 150) {
+  //     $(".header").addClass("header--sticky");
+  //     $(".menu-btn").addClass("menu-btn--sticky");
+  //   }
+  //     else {
+  //     $(".header").removeClass("header--sticky");
+  //     $(".menu-btn").removeClass("menu-btn--sticky");
+  //     }
+  // });
+
+  let previouseScroll = 0;
+  
+  $(window).scroll(() => {
+    let currentScroll = $(this).scrollTop();
+    currentScroll > previouseScroll ? $(".header").addClass("header--sticky") : $(".header").removeClass("header--sticky");
+    previouseScroll = currentScroll;
+  })
+
 });
