@@ -152,6 +152,12 @@
   }
 }
 
+@media (max-width: $sm) {
+  .login {
+    margin-top: 60px;
+  }
+}
+
 .breadcrumbs {
   font-family: "Rubik Regular", sans-serif;
   font-size: 14px;
