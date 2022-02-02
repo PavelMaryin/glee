@@ -14,7 +14,7 @@
   .main {
     padding-top: 70px;
   }
-};
+}
 
 @import "../module/_header/header";
 
@@ -35,6 +35,8 @@
 @import "../module/_sliders/partners";
 
 @import "../module/_footer/footer";
+
+@import "../module/_elements/paginatin";
 
 // login.html
 
@@ -205,6 +207,21 @@
 
   &__inner {
     display: flex;
+
+    .week-products {
+      &__title {
+        display: none;
+      }
+
+      &__filter {
+        display: none;
+      };
+    }
+
+    .container {
+      padding: 0;
+    }
+
   }
 
   &__filter {
@@ -336,34 +353,6 @@
   }
 }
 
-.pagination {
-  text-align: center;
-  font-family: "Rubik Regular", sans-serif;
-  margin-bottom: 120px;
-
-  &__list {
-    display: inline-block;
-  }
-
-  &__item {
-    display: inline-block;
-    margin-right: 15px;
-  }
-
-  &__num,
-  &__link {
-    position: relative;
-    display: inline-block;
-    padding: 15px 20px;
-    border: 1px solid $bluec8;
-
-    &--active {
-      color: $whiteff;
-      background-color: $bluec8;
-    }
-  }
-}
-
 .filter-recent {
   margin-top: -5px;
 
@@ -407,7 +396,6 @@
 .jq-ry-container {
   padding: 0;
 }
-
 
 .product-page {
   font-family: "Rubik Regular", sans-serif;

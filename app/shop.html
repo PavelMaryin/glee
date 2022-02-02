@@ -163,7 +163,7 @@
           </div>
           
           <div class="shop__contant">
-
+            
             <div class="shop__contant-filter">
               <span class="shop__contant-subtitle">
                 View
@@ -178,9 +178,10 @@
                   <use class="shop__contant-image" xlink:href="images/sprite.svg#btn-list"></use>
                 </svg>
               </button>
-
-
+                            
             </div>
+
+            @@include('module/_products/_products_week.html')
 
             <ul class="shop__contant-list">
 
@@ -890,29 +891,7 @@
           </div>
         </div>
 
-        <div class="pagination">
-          <ul class="pagination__list">
-            <li class="pagination__item">
-              <a class="pagination__num pagination__num--active text-effect" href="#">
-                1
-              </a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__num text-effect" href="#">
-                2
-              </a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__num text-effect" href="#">
-                3
-              </a>
-            </li>
-          </ul>
-          <a class="pagination__link text-effect" href="#">
-            Next
-          </a>
-
-        </div>
+        @@include('module/_elements/_pagination.html')
 
 
       </div>
